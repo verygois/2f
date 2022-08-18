@@ -10,16 +10,34 @@ $(function(){
 </script>
 <title>∧° ┐ | creative, community space</title>
 <style>
+        
+@font-face {
+  font-family: "MS Mincho";
+  src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+ }
+.pehu {font-family: "MS Mincho", "SimSong", serif;}
+
+.menu {
+  width:100%;
+  display: -webkit-flex;
+  margin: 0; padding: 0;
+  list-style-type: none;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content:  space-between;
+  -webkit-align-items: normal;
+  align-items: normal;
+}
+
 #event a {color: #000; text-decoration: none;}
 #event a:hover {color: blue;}
 #event b {font-size: 150%; font-weight: normal;}
 #event u {font-size: 125%; font-weight: bold; padding: 0 0.5rem;}
-#event .tt {border: 1px solid black; padding: 0.1rem 0.2rem;}
+#event .tt {border: 1px solid black; padding: 0.2rem;}
 #event .open {font-style:oblique;}
-#event #title {padding: 0; font-family: "ＭＳ 明朝","MS Mincho";}
 #event {font-family: "MingLiU-ExtB"; font-size: 1.25rem; padding: 0; margin: 5rem 5vw ; letter-spacing: 0.05rem;}
 hr {clear:both; border: 0 none; padding-top:1em;}
-#event input[type="button"] {font-size: 75%; width:auto; border: 1px solid #000;}
 
 @media screen and (max-width: 550px){
 #event div {padding: 0 0 1em;}
@@ -28,9 +46,12 @@ hr {clear:both; border: 0 none; padding-top:1em;}
 </head>
 <body>
 <div id="event">
-<div>
-  <b class="pehu">∧° ┐ </b><span class="tt">2F</span>
-  <br/><span class="open">1.7 - 8.31.2019</span>
+<div class="menu">
+  <p>
+    <b class="pehu">∧° ┐</b>
+    <span class="tt">2F</span>
+  </p>
+  <span class="open">1.7 - 8.31.2019</span>
 </div>
 <hr/>
 <div>
