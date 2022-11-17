@@ -93,6 +93,7 @@ hr {
 }
 
 #info .more {
+  box-sizing: border-box;
   font-size: 0.9rem;
   padding: 4.5vw;
   break-inside: avoid;
