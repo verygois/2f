@@ -9,7 +9,6 @@ h3 {
 body {
   color: var(--main-text);
   background-color: var(--main-color);
-  font-family: var(--main-font);
 }
 
 a {
@@ -75,6 +74,7 @@ hr {
 .contents {
   box-sizing: border-box;
   padding: 4.5vw;
+  font-family: var(--main-font);
 }
 
 .text {
@@ -92,6 +92,7 @@ hr {
   columns: 250px auto;
   column-fill: auto;
   break-inside: avoid-page;
+  font-family: var(--sub-font);
 }
 
 #info .more {
