@@ -19,7 +19,7 @@ a {
 
 a:hover {
   background-color: var(--sub-color);
-  color: var(--main-text);
+  color: var(--main-color);
   font-style:oblique;
 }
 
@@ -41,7 +41,8 @@ h3,
   line-height: 200%;
 }
 
-h3 b {
+h3 b,
+.text b {
   font-size: 3vw;
 }
 
