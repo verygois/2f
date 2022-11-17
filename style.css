@@ -87,6 +87,7 @@ hr {
 }
 
 #info {
+  padding: 1rem;
   columns: 250px auto;
   column-fill: auto;
   break-inside: avoid-page;
@@ -95,7 +96,7 @@ hr {
 #info .more {
   box-sizing: border-box;
   font-size: 0.9rem;
-  padding: 4.5vw;
+  padding: 1rem;
   break-inside: avoid;
 }
 
