@@ -1,0 +1,152 @@
+body,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--main-text);
+  background-color: var(--main-color);
+  font-family: var(--main-font);
+}
+
+a {
+  color: var(--sub-color);
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--sub-color);
+  color: var(--main-text);
+  font-style:oblique;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  letter-spacing: 0.1vw;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+h2,
+h3,
+.text p {
+  font-size: 2vw;
+  line-height: 200%;
+}
+
+h3 b {
+  font-size: 3vw;
+}
+
+.name b {
+  font-size: 4.5vw;
+  line-height: 150%;
+  font-weight: normal;
+}
+
+h1 {
+  float: right;
+}
+
+h2 {
+  float: left;
+}
+
+h3,
+hr,
+.text,
+#info {
+  clear: both;
+}
+
+hr {
+  border: none;
+  height: 2vw;
+}
+
+.contents {
+  box-sizing: border-box;
+  padding: 4.5vw;
+}
+
+.text {
+  margin-bottom: 4.5vw;
+}
+
+.text p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: 0.2vw;
+}
+
+#info {
+  columns: 250px auto;
+  column-fill: auto;
+  break-inside: avoid-page;
+}
+
+#info .more {
+  font-size: 0.9rem;
+  padding: 4.5vw;
+  break-inside: avoid;
+}
+
+#info img {
+  width: 100%
+}
+
+@media screen and (max-width: 750px) {
+  h1,
+  h2,
+  h3 {
+    letter-spacing: 0.05rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2,
+  h3,
+  .text p {
+    font-size: 0.9rem;
+  }
+
+  h3 b {
+    font-size: 1.25rem;
+  }
+
+  .name b {
+    font-size: 2rem;
+  }
+
+  hr {
+    height: 0.5rem;
+  }
+
+  .text {
+    margin-bottom: 2rem;
+  }
+
+  .text p {
+    letter-spacing: 0.1rem;
+  }
+
+  #info {
+    margin-top: 2rem;
+    columns: 2;
+  }
+}
+
+@media print {
+  .contents {
+    min-height: 100vh;
+  }
+}

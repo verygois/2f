@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>K by 爆破片非安全製造団</title>
-<style>
-html {color: #000; background-color: red; font-family: "ＭＳ 明朝","MS Mincho"; sans-serif;}
-a {color: yellow; font-weight: normal; text-decoration: none;}
-a:hover {background-color: yellow; color: #000; font-style:oblique;}
-h1 {font-size: 3vw; font-weight: normal; float: left; margin: 0; letter-spacing: 0.04rem;}
-h2 {font-size: 2vw; font-weight: normal; line-height: 4vw; float: left; margin: 0 1vw; letter-spacing: 0.04rem;}
-h3 {font-size: 3vw; font-weight: normal; float: right; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-h4 {font-size: 3vw; font-weight: normal; text-align: center; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-.name {font-size: 4.5vw; line-height: 7vw; font-weight: normal; margin: 0;}
-.text {padding: 0; font-size: 2vw; line-height: 3vw; letter-spacing: 0.07rem;}
-i {font-size: 1.5vw; text-decoration:underline wavy #000;}
-table {padding: 4vw 0 0;}
-u {font-size: 2vw; line-height: 3vw;}
-td {vertical-align: super; padding: 1vw 2vw 0;}
-.selected {float: right;}
-.contents {padding: 4vw;}
-.info {font-size: 1.5vw; line-height: 3vw; margin: 4vw 2vw; padding: 4vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.events {line-height: 3vw; margin: 4vw 2vw; padding: 2vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.jp{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: left; width: 44vw;}
-.en{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: right; width: 44vw;}
-hr {border: 0; height: 2vw; clear: both;}
-.tt{font-size: 2vw; margin: 0 1em 0 0; line-height: 1.5em; }
-</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>K by 爆破片非安全製造団</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @font-face {
+        font-family: "MS Mincho", serif;
+        src: url("https://vg.pe.hu/jp/MSMincho.ttf");
+    }
+
+    :root {
+      --main-text: #000;
+      --main-color: red;
+      --sub-color: yellow;
+      --main-font: "MS Mincho", serif;
+      --sub-font: "Times New Roman", serif;
+    }
+
+    .contents img {
+      width: 100%;
+      max-width: 500px;
+    }
+  </style>
 </head>
 <body>
-<div class="contents">
-<h2>2019年5月26日-<br/>5.26.2019-<h2>
-<h3>K</h3>
-<hr/>
-<h1>[Secret Exhibition]</h1> <h2>by</h2>
-<hr/>
-<p id="name"><b class="name">爆破片非安全製造団</b></p>
-<hr/>
-<div class="text">
-<p>会場 Venue</p>
-<p>34°40'12.8"N 135°30'11.7"E
-</p>
-<hr/>
-<img src="https://d2w9rnfcy7mm78.cloudfront.net/4409409/original_eeaf742886e833746089c9e9768276a2.jpg?1559726353" width="220vw">
-<h3><a href="http://vg.pe.hu/2f/k.html">vg.pe.hu/2f/k.html</a></h3>
-</div>
-</div>
-<div class="events">
-<div class="jp">
-<h1><u>K 製造</u></h1>
-<hr/>
-<p>6月14日(金)<br/>Friday, June 14<br/>
-7pm -</p>
-参加費 : 0.002 BTC</br>
-<img src="https://attachments.timetreeapp.com/calendar/bea4/2019-05-23/27440394-1558576593504.jpg" width="130vw">
-</div>
-<div class="en">
-<h1><u>K PARTY</u></h1>
-<hr/>
-<p>6月15日(土)<br/>Saturday, June 15<br/>
-5am -</p>
-1 BAANG! : 0.00001 BTC</br>
-<img src="https://attachments.timetreeapp.com/calendar/33b6/2019-05-23/27440394-1558576608432.jpg" width="150vw">
-</div>
-</div>
-<hr/>
+  <main class="contents">
+    <h1>K</h1>
+    <h2>2019年5月26日-<br/>5.26.2019-</h2>
+    <hr/>
+    <h3><b>[Secret Exhibition]</b> by</h3>
+    <hr/>
+    <p class="name">
+      <b>爆破片非安全製造団</b>
+    </p>
+    <hr/>
+    <div class="text">
+      <p>会場 Venue</p>
+      <p>34°40'12.8"N 135°30'11.7"E</p>
+    </div>
+    <img src="https://d2w9rnfcy7mm78.cloudfront.net/4409409/original_eeaf742886e833746089c9e9768276a2.jpg?1559726353">
+    <h1><a href="http://vg.pe.hu/2f/k.html">vg.pe.hu/2f/k.html</a></h1>
+  </main>
+
+  <section id="info">
+    <div class="more">
+      <u>K 製造</u>
+      <p>
+        6月14日(金)
+        <br/>Friday, June 14
+        <br/>7pm -
+      </p>
+      <p>参加費 : 0.002 BTC</p>
+      <img src="https://attachments.timetreeapp.com/calendar/bea4/2019-05-23/27440394-1558576593504.jpg">
+    </div>
+      <div class="more">
+        <u>K PARTY</u>
+        <p>
+          6月15日(土)
+          <br/>Saturday, June 15
+          <br/>5am -
+        </p>
+        <p>1 BAANG! : 0.00001 BTC</p>
+        <img src="https://attachments.timetreeapp.com/calendar/33b6/2019-05-23/27440394-1558576608432.jpg">
+      </div>
+  </section>
 </body>
 </html>
