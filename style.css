@@ -109,7 +109,7 @@ hr {
   position: absolute;
   top: 100vh;
   width: 100%;
-  min-height: -webkit-fill-available;
+  min-height: 100vh;
   box-sizing: border-box;
   padding: 1rem;
   column-fill: auto;
@@ -151,7 +151,7 @@ hr {
   #main .text p {
     font-size: 2.5vw;
   }
-  
+
   h3 b,
   #main .text b {
     font-size: 3vw;
