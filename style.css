@@ -151,8 +151,9 @@ hr {
   #main .text p {
     font-size: 2.5vw;
   }
-
-  h3 b {
+  
+  h3 b,
+  #main .text b {
     font-size: 3vw;
   }
 
