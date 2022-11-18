@@ -1,90 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>造り物 Tsukurimono</title>
-<style>
-html {color: #fff; background-color: firebrick; font-family: "ＭＳ 明朝","MS Mincho"; sans-serif;}
-body {margin:0; padding:0;}
-a {color: firebrick; background-color: #fff; font-weight: normal; text-decoration: none;}
-a:hover {background-color: #fff; color: firebrick; font-style:oblique;}
-h1 {font-size: 3vw; font-weight: normal; float: left; margin: 0; padding-right: 3vw; letter-spacing: 0.04rem;}
-h2 {font-size: 2vw; font-weight: normal; line-height: 4vw; float: left; margin: 0 1vw; letter-spacing: 0.04rem;}
-h3 {font-size: 3vw; font-weight: normal; float: right; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-h4 {font-size: 3vw; font-weight: normal; text-align: center; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-.name {font-size: 4.5vw; line-height: 7vw; font-weight: normal; margin: 0;}
-.text {padding: 0; font-size: 2vw; line-height: 3vw; letter-spacing: 0.07rem;}
-i {font-size: 1.5vw; text-decoration:underline wavy #000;}
-table {padding: 4vw 0 0;}
-u {font-size: 2vw; line-height: 3vw;}
-td {vertical-align: super; padding: 1vw 2vw 0;}
-.selected {float: right;}
-.contents {padding: 4vw;}
-.info {font-size: 1.5vw; line-height: 3vw; margin: 4vw 2vw; padding: 4vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.events {line-height: 3vw; margin: 4vw 2vw; padding: 2vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.jp{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: left; width: 44vw;}
-.en{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: right; width: 44vw;}
-hr {border: 0; height: 2vw; clear: both;}
-.tt{font-size: 2vw; margin: 0 1em 0 0; line-height: 1.5em; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>造り物 Tsukurimono</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  :root {
+    --main-text: #fff;
+    --main-color: firebrick;
+    --sub-color: #fff;
+  }
+
+  #main img {
+    max-height: 100%;
+    max-width: 95%;
+  }
+
+  #info {
+    columns: 300px auto;
+  }
+
+  @media screen and (max-width: 750px) {
+    #info {
+      columns: 2;
+    }
+  }
+  </style>
 </head>
 <body>
-<div class="contents">
-<h2>2019年7月23日-7月27日<br/>7.23-7.27.2019</h2>
-<h3>造り物 Tsukurimono</h3>
-<hr/>
-<h1>造り物とは</h1><span>祭礼や年中行事の際に、その家や店舗にある台所用品などの日用品を利用し、物語や芝居の一場面などに見立てた飾り物を造る文化。</span><br/>
-<p>造り物の特徴のは、既存の物や物語を見立てた造形であることと、期間が終われば元に戻せるよう、過剰な加工を施さないこと。<br/>
-伝播ルートは明らかになっていないそうですが、大阪・天神祭が発祥とも言われているそうです。</p>
-<hr/>
-<p class="text">ペフが拠点する老松通りにある蕎麦屋「衣笠」の店主は、天神祭の際に造り物を飾り続けている唯一の人物です。<br/>この展覧会では、造り物という文化と、その文化を絶やさず守る彼の想いを紹介します。</p>
-<hr/>
-<a href="https://d2w9rnfcy7mm78.cloudfront.net/3809193/original_3a174c380759a9bfd9bb6fe758e074b3.jpg?1551939438">
-<img src="https://d2w9rnfcy7mm78.cloudfront.net/3809193/original_3a174c380759a9bfd9bb6fe758e074b3.jpg?1551939438" width="400vw"></a>
-<h3><a href="http://vg.pe.hu/2f/tsukurimono.html">vg.pe.hu/2f/tsukurimono.html</a></h3>
-<hr/><hr/>
-<h1>What is "Tsukurimono"</h1><span>There is a culture where house owners and shop owners make an object resembling a story or a scene of a play using utensils like kitchenware for festivals and annual events.<br/>
-<p>The objects are called "Tsukuri-mono," which characterized with these facts<br/>
--based on existing stuffs or stories <br/>
--as these are made out of utensils, made very simply so that they can use them again after the festivals or the events<br/>
-Its origin has not traced yet though some says Tenjin Festival in Osaka is the origin.<p>
+  <main id="main">
+    <h1>造り物 Tsukurimono</h1>
+    <h2>2019年7月23日-7月27日<br/>7.23-7.27.2019</h2>
+    <hr/>
+    <h3>
+      <b>造り物とは</b>
+      祭礼や年中行事の際に、その家や店舗にある台所用品などの日用品を利用し、物語や芝居の一場面などに見立てた飾り物を造る文化。<br/>
+    </h3>
+    <hr/>
+    <p>
+      造り物の特徴のは、既存の物や物語を見立てた造形であることと、期間が終われば元に戻せるよう、過剰な加工を施さないこと。<br/>
+      伝播ルートは明らかになっていないそうですが、大阪・天神祭が発祥とも言われているそうです。</p>
+      <hr/>
+      <div class="text">
+        <p>
+          ペフが拠点する老松通りにある蕎麦屋「衣笠」の店主は、天神祭の際に造り物を飾り続けている唯一の人物です。<br/>
+          この展覧会では、造り物という文化と、その文化を絶やさず守る彼の想いを紹介します。
+        </p>
+      </div>
+      <div class="images">
+        <img src="https://d2w9rnfcy7mm78.cloudfront.net/3809193/original_3a174c380759a9bfd9bb6fe758e074b3.jpg?1551939438">
+      </div>
+    </main>
 
-<p>The owner of Soba restaurant Kinugasa, which is located on the Oimatsu street where Pehu is also at, is the only person keeps making Tsukurimono during Tenjin Festival.
-In this exhibition, we introduce Tsukurimono culture and his hopes for keeping this culture。</p>
-<hr/>
-</div>
-<div class="events">
-<div class="jp">
-<h1><u>関連イベント Event</u></h1>
-<hr/>
-<h1></u>Tenjin Matsuri</h1>
-<hr/>
-<h1>天神祭</h1><hr/>
-<p>2019年7月24日-7月25日<br/>7.24-7.25.2019</p>
-<a href="http://www.tenjinmatsuri.com/tenjinfestival"><i>more info</i></a>
-</div>
-<div class="en">
-<p>2019年7月25日(木) 19:30～20:50<br/>7.25.2019 Thursday 7:30PM-</p>
-<h2>屋上から花火を見ましょう<br/>Want to see Fireworks from pehu’s rooftop</h2>
-</div>
-</div>
-<hr/>
-<div class="info">
-<div class="jp">
-<h1><u>同時開催<br/>Simultaneous holding an exhibition about</u></h1>
-<hr/>
-[Exhibition] by Kagomoto Shinichi<hr/>
-<h1></u>籠本 真一 個展<br/>‬ ‪「 さくら 」‬</h1>
-<hr/>
-<p>2019年7月24日-7月27日<br/>7.24-7.27.2019</p>
-at Second floor of pehu
-<p>Opening Hours: 3PM-8PM</p>
-</div>
-<div class="en">
-<a href="https://d2w9rnfcy7mm78.cloudfront.net/4663323/large_640757fc799416ab9f3f58789a4cf1d5.jpg?1563591310">
-<img src="https://d2w9rnfcy7mm78.cloudfront.net/4663323/large_640757fc799416ab9f3f58789a4cf1d5.jpg?1563591310" width="250vw"></a>
-<h3><a href="http://vg.pe.hu/2f/sakura.html">vg.pe.hu/2f/sakura.html</a></h3>
-</div>
-</div>
-</body>
-</html>
+    <section id="info">
+      <div class="text">
+        <h3>What is "Tsukurimono"</h3>
+        <p>There is a culture where house owners and shop owners make an object resembling a story or a scene of a play using utensils like kitchenware for festivals and annual events.</p>
+        <p>
+          The objects are called "Tsukuri-mono," which characterized with these facts<br/>
+          -based on existing stuffs or stories <br/>
+          -as these are made out of utensils, made very simply so that they can use them again after the festivals or the events<br/>
+          Its origin has not traced yet though some says Tenjin Festival in Osaka is the origin.
+        </p>
+        <p>
+          The owner of Soba restaurant Kinugasa, which is located on the Oimatsu street where Pehu is also at, is the only person keeps making Tsukurimono during Tenjin Festival.<br/>
+          In this exhibition, we introduce Tsukurimono culture and his hopes for keeping this culture.
+        </p>
+      </div>
+
+      <div class="more">
+        <u>関連イベント Event</u>
+        <p class="name"></u>Tenjin Matsuri</u><br/><b>天神祭</b></p>
+        <p>2019年7月24日-7月25日<br/>7.24-7.25.2019</p>
+        <a href="http://www.tenjinmatsuri.com/tenjinfestival">more info</a>
+        <p>2019年7月25日(木) 19:30～20:50</p>
+        <p>屋上から花火を見ましょう</p>
+        Want to see Fireworks from pehu’s rooftop
+      </div>
+
+      <div class="more">
+        <u>同時開催<br/>Simultaneous holding an exhibition about</u>
+        <p class="name"></u>[Exhibition] by Kagomoto Shinichi</u><br/><b>籠本 真一 個展「 さくら 」</b></p>
+        <p>2019年7月24日-7月27日<br/>7.24-7.27.2019</p>
+        at Second floor of pehu
+        <p>Opening Hours: 3PM-8PM</p>
+        <a href="http://vg.pe.hu/2f/sakura.html">vg.pe.hu/2f/<i>sakura</i>.html</a>
+      </div>
+
+      <div class="more">
+        <p><img src="https://d2w9rnfcy7mm78.cloudfront.net/4663323/large_640757fc799416ab9f3f58789a4cf1d5.jpg?1563591310"></p>
+      </div>
+    </section>
+  </body>
+  </html>
