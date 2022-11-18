@@ -1,222 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Exhibition/Residency by Laurel Schwulst, Elliott Cost</title>
-<style>
-html {color: #000; background-color: forestgreen; font-family: "ＭＳ 明朝","MS Mincho"; sans-serif;}
-body {margin:0; padding:0;}
-a {color: #ececec; font-weight: normal; text-decoration: none;}
-a:hover {background-color: #ececec; color: #000; font-style:oblique;}
-td img {float: left; padding-right: 2vw;}
-h1 {font-size: 3vw; font-weight: normal; float: left; margin: 0; letter-spacing: 0.04rem;}
-h2 {font-size: 2vw; font-weight: normal; line-height: 4vw; float: left; margin: 0 1vw; letter-spacing: 0.04rem;}
-h3 {font-size: 3vw; font-weight: normal; float: right; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-h4 {font-size: 3vw; font-weight: normal; text-align: center; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-.name {font-size: 4.5vw; line-height: 7vw; font-weight: normal; margin: 0;}
-.text {padding: 0; font-size: 1.5vw; line-height: 2.5vw; letter-spacing: 0.07rem;}
-i {font-size: 1.5vw; text-decoration:underline wavy #000;}
-u {font-size: 1.5vw;}
-ul {
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap; /* Safari */
-  flex-wrap:         wrap;
-  -webkit-align-items: normal; /* Safari */
-  align-items: normal;
-margin: 0;
-padding: 0;
-list-style-type: none;
-}
-.month li {font-size: 1.25vw; float: left; width: auto; padding: 0 2% 2%; background-color:rgba(255,255,255,0.5);}
-.date li {font-size: 1vw; float: left; width: 10%; padding: 2%; background-color:rgba(255,255,255,0.5);}
-.date li:nth-child(7n) {color: red;}
-.red {color: red;}
-.date li:nth-child(7n-1) {color: blue;}
-.red {font-size: 2vw; background-color: red;}
-.month {position:relative; z-index: -1; font-size: 3vw; color: #fff; margin: -1vw; padding: 1vw 1.5vw; border: 0.25vw solid #fff; border-radius: 100px;}
-.pickup {font-size: 1.25vw; color: yellow; margin: -1vw; padding: 1vw; border: 0.25vw solid red; border-radius: 100px;}
-.event {font-size: 1.25vw; ccolor: #000; margin: -0.5vw; padding: 0.5vw; border: 0.25vw dotted #000;}
-table {padding: 4vw 0 0;}
-b {font-size: 3vw; font-weight: normal;}
-td {vertical-align: super; padding: 1vw 2vw 0;}
-.selected {float: right;}
-.contents {padding: 4vw;}
-.info {font-size: 1.5vw; line-height: 2.5vw; margin: 4vw 2vw; padding: 4vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.events {line-height: 3vw; margin: 4vw 2vw; padding: 2vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.jp{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: left; width: 44vw;}
-.en{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: right; width: 44vw;}
-hr {border: 0; height: 2vw; clear: both;}
-.tt{font-size: 2vw; margin: 0 1em 0 0; line-height: 1.5em; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>Exhibition/Residency by Laurel Schwulst, Elliott Cost</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  :root {
+    --main-text: #000;
+    --main-color: forestgreen;
+    --sub-color: #ececec;
+  }
+
+  #main img {
+    max-height: 100%;
+    max-width: 95%;
+  }
+
+  #info {
+    columns: 2;
+  }
+
+  @media screen and (max-width: 750px) {
+    #info {
+      columns: 1;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    color: #fff;
+    padding: 1vw 1.5vw;
+    border: 0.25vw solid #fff;
+    border-radius: 100px;
+  }
+
+  .date {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .date li {
+    font-size: 1.25vw;
+    float: left;
+    box-sizing: border-box;
+    padding: 2.5%;
+    margin: 0;
+    width: 14%;
+    background-color:rgba(255,255,255,0.5);
+  }
+
+  .red,
+  .date li:nth-child(7n) {
+    color: red;
+  }
+
+  .date li:nth-child(7n-1) {
+    color: blue;
+  }
+
+  .date .pickup,
+  .date .event {
+    font-size: 75%;
+    margin: 0.5vw 0;
+  }
+
+  .date .event {
+    color: #000;
+    padding: 0.5vw;
+    border: 0.01vw dotted #000;
+  }
+
+  .pickup {
+    color: yellow;
+    padding: 1vw;
+    border: 0.01vw solid red;
+    border-radius: 5vw;
+  }
+  </style>
 </head>
 <body>
-<div class="contents">
-<h2>2019年7月19日-8月13日<br/>7.19-8.13.2019</h2>
-<h3>Green People</h3>
-<hr/>
-<h1>[Exhibition/Residency]</h1>　<h2>by</h2><h2>ローレル・シュルスト | エリオット・コスト</h2>
-<hr/>
-<p id="name"><b class="name"><a href="http://laurelschwulst.com/">Laurel Schwulst</a></b>
-<b class="name"> | <a href="https://elliott.computer/">Elliott Cost</a></b>
-<hr/>
-<div class="text">
-<p>アメリカから二人のデザイナーが来日しペフで滞在制作を行います。彼らの作品はとてもシンプルな、私たちの生活をより豊かにするための仕掛けです。<br/>
-私たちが大切にしていることは、自分たちにとってちょうどいい生活を営むこと。共に遊び考える中で生まれた新しい発見やアイデアを共有し、あなたがより豊かな気持ちで家に帰ることができるような展覧会を目指します。</p>
-<hr/>
-<p>Two designers from America are having residencies at Pehu. Their works are very simple devices to nourish our lives.<br/>
-Our priority is to have a life which fits yourself the best. We aim to make an exhibition which you can go home with more enriched mind by sharing new findings and ideas while hanging out and thinking together.</p>
-<hr/><hr/>
-<span class="month">1</span>　[Exhibition] 7.29-8.10.2019<br/>
-<h1>Green People</h1>　<h2>by</h2><h2>Laurel Schwulst | Elliott Cost | Kazuma Sasajima</h2><hr/>
-<p>これは、言語・随筆・ウェブサイト・デザイン・馬・玉ねぎ・グラスいっぱいの水・風に揺れる草・エンプティーデイ／エンプティータイム・お気に入りの場所など、私たちが興味のある物事についての展覧会です。</p>
-<p>Language, Essay, Website, Design, Horse, Onion, A glass of water, Flattering grass, Empty day / time, Favorite place,,, this is an exhibition about our interests.</p>
-<hr/><hr/>
-<span class="month">2</span>　[Preview] 7.29-8.10.2019 [Available] 8.14-9.15.2019<br/>
-<h1>Airbnb Flight Simulator Room</h1>　<h2>by</h2><h2>Laurel Schwulst</h2><hr/>
-<p>8月14日から、ローレル・シュルストが制作し、Softによって公開されたアプリケーション「<a href="http://flightsimulator.soft.works/">フライトシミュレーター</a>」のアイデアを用いた宿泊室への宿泊を承ります。また上記展覧会にあわせて、内覧会を開催します。</p>
-<p>From 14th August we are opening an renting room with the ideas from "<a href="http://flightsimulator.soft.works/">Flight Simulator</a>," an app created by Laurel Schwulst and published by Soft.</p>
-<p><u>* Many Thanks to <a href="http://aarati.me/">Aarati Akkapeddi</a> for creating the pin designs.</u></p>
-<hr/><hr/>
-<h3><a href="http://vg.pe.hu/2f/greenpeople.html">vg.pe.hu/2f/greenpeople.html</a></h3>
-</div>
-</div>
-<div class="info">
-<div class="jp">
-<h1>∧°┐ | <a href="http://vg.pe.hu/jp/">vg.pe.hu/jp</a></h1><hr/>
-<p><a href="https://goo.gl/maps/EC7U6kkX9f32">〒530-0047<br/>大阪府大阪市北区西天満4-8-1<br/>4-8-1 Nishitemma, Kita-ku, Osaka</a></p>
-</div>
-<div class="en">
-<p>Opening Hours</p>
-<p>Weekday：3PM-8PM<br/>Satuday：1PM-6PM<br/>Closed：Sunday, Holiday</p>
-</div>
-<hr/>
-<hr/>
-<span class="month">7月 July</span>
-<ul class="date">
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li><b>19</b>
-  <p class="event">Laurel arrive Osaka</p>
-</li>
-<li><b>20</b>　
-<span class="hour"><u>7pm-</u></span>
-  <p class="event">露天神社（お初天神） 例大祭（夏祭）</p>
-</li>
-<li><b>21</b>
-  <p class="event">Elliott arrive Osaka</p>
-</li>
-<li><b>22</b>
-</li>
-<li><b>23</b>
-</li>
-<li><b>24</b>
-<div class="pickup">天神祭</div>
-</li>
-<li><b>25</b>
-<div class="pickup">天神祭　<span class="hour"><u>7:30pm-</u></span></div>
-  <p class="event">屋上で一緒に花火を見ませんか？</p>
-</li>
-<li><b>26</b>
-</li>
-<li><b>27</b>
-</li>
-<li><b>28</b>　
-<span class="hour"><u>7pm-</u></span>
-<div class="pickup"><p>Opening party</p>
-<u>Cooking Day</u></div>
-</li>
-<li><b>29</b>
-  <p class="event"><u>First day of exhibition</u></p>
-</li>
-<li><b>30</b>
-</li>
-<li><b>31</b>
-  <p class="event">goodbye Elliott</p>
-</li>
-</ul>
-<hr/>
-<span class="month">8月 August</span>
-<ul class="date">
-<li></li>
-<li></li>
-<li></li>
-<li><b>1</b>
-</li>
-<li><b>2</b>　
-</li>
-<li><b>3</b>
-</li>
-<li><b>4</b>　
-<span class="hour"><u>meeting pehu at 6pm-</u></span>
-  <p class="pickup"><i>盆踊りに行こう</i></p>
-</li>
-<li><b>5</b>　
-<span class="hour"><u>7pm-</u></span>
-  <p class="event">折り紙で遊ぼう</p>
-</li>
-<li><b>6</b>
-</li>
-<li><b>7</b>
-</li>
-<li><b>8</b>
-</li>
-<li><b>9</b>
-</li>
-<li><b>10</b>
-  <p class="event"><u>Last day of exhibition</u></p>
-<div class="pickup">7pm-<p>Secret closing party</p></div>
-</li>
-<li><b>11</b>
-  <p class="pickup"><i>京丹後でキャンプ</i></p>
-</li>
-<li class="red"><b>12</b>
-  <p class="pickup"><i>京丹後でキャンプ</i></p>
-</li>
-<li class="red"><b>13</b>
-  <p class="event">goodbye Laurel</p>
-</li>
-</ul>
-<h3>一泊一部屋 7000yen [5名まで宿泊可]</h3><hr/>
-<p class="month" style="text-align:center;">Airbnb Flight Simulator Room Available on 8.14-9.15.2019</p>
-</div>
-<table cellspacing="0" width="100%" style="table-layout: fixed;">
-<tr>
-<td><u>ローレル・シュルスト Laurel Schwulst</u></td>
-<td><u>エリオット・コスト Elliott Cost</u></td>
-</tr>
-<tr>
-<td>
-<p>
-ローレル・シュルストはデザイナー、作家、そしてウェブマスターです。<br/>彼女は動物、公共スペース、雰囲気、書くこととウェブサイト、名前とその由来、自由な思考、落ち着いた技術、退屈なミステリー、アミニズム、風、そして喜びについて考えることを好みます。<br/>
-彼女はニューヨークに住んでいます。 今年の初めに、彼女はFlight Simulatorをリリースしました。それはソフトアプリケーションによって発行された新しい旅行アプリです。 秋には、エールで「メタデータとして書く」と呼ばれるコースを教えます。
-過去にはザ・クリエイティブ・インディペンデントでクリエイティブディレクターを務めていました。</p>
-<br/><a href="http://laurelschwulst.com/">laurelschwulst.com</a></td>
-<td>
-<p>
-エリオット・コストはハワイのマウイ島出身のアーティスト・デザイナーです。
-<br/>現在、彼はベル・キオスクと名付けられたデザイン活動をしています。<br/>過去にはキックスターターによる出版物、ザ・クリエイティブ・インディペンデントで仕事をしていました。</p>
-<br/><a href="https://elliott.computer/">elliott.computer</a></td>
-</tr>
-</table>
-<hr/>
-<div class="events">
-<div class="jp">
-<p>This USB includes an installation view of This Show.</p>
-<img width="90%" src="https://creative-community.space/pehu/dm/this.png">
-<h1 class="name">
-<a href="https://creative-community.space/pehu/dm/">BUY NOW</a>
-</h1>
-</div>
-<div class="en">
-<p>Look the Collection of</p> 
-<h1 class="name">
-<a href="http://newlifecollection.com/?word=Laurel+Schwulst">Laurel Schwulst</a>,
-<a href="http://newlifecollection.com/?word=Elliott+Cost">Elliott Cost</a>.
-</h1>
-</div>
-</div>
-<hr/>
-</body>
-</html>
+  <main id="main">
+    <h1>Green People</h1>
+    <h2>2019年7月19日-8月13日<br/>7.19-8.13.2019</h2>
+    <hr/>
+    <h3><b>[Exhibition/Residency]</b> by ローレル・シュルスト | エリオット・コスト</h3>
+    <hr/>
+    <p class="name">
+      <b><a href="http://laurelschwulst.com/">Laurel Schwulst</a> | </b>
+      <b><a href="https://elliott.computer/">Elliott Cost</a> | </b>
+    </p>
+    <hr/>
+    <div class="text">
+      <p>
+        アメリカから二人のデザイナーが来日しペフで滞在制作を行います。彼らの作品はとてもシンプルな、私たちの生活をより豊かにするための仕掛けです。<br/>
+        私たちが大切にしていることは、自分たちにとってちょうどいい生活を営むこと。共に遊び考える中で生まれた新しい発見やアイデアを共有し、あなたがより豊かな気持ちで家に帰ることができるような展覧会を目指します。
+      </p>
+      <p>
+        Two designers from America are having residencies at Pehu. Their works are very simple devices to nourish our lives.<br/>
+        Our priority is to have a life which fits yourself the best. We aim to make an exhibition which you can go home with more enriched mind by sharing new findings and ideas while hanging out and thinking together.
+      </p>
+    </div>
+    <div class="images">
+      <img src="">
+    </div>
+    <h1><a href="http://vg.pe.hu/2f/greenpeople.html">vg.pe.hu/2f/greenpeople.html</a></h1>
+  </main>
+
+  <section id="info">
+    <div class="more">
+      <u>Green People</u>
+      <p>7.29-8.10.2019</p>
+      <p>これは、言語・随筆・ウェブサイト・デザイン・馬・玉ねぎ・グラスいっぱいの水・風に揺れる草・エンプティーデイ／エンプティータイム・お気に入りの場所など、私たちが興味のある物事についての展覧会です。</p>
+      <p>Language, Essay, Website, Design, Horse, Onion, A glass of water, Flattering grass, Empty day / time, Favorite place,,, this is an exhibition about our interests.</p>
+    </div>
+    <div class="more">
+      <u>Airbnb Flight Simulator Room</u>
+      <p>[Preview] 7.29-8.10.2019<br/>[Available] 8.14-9.15.2019</p>
+      <p>8月14日から、ローレル・シュルストが制作し、Softによって公開されたアプリケーション「<a href="http://flightsimulator.soft.works/">フライトシミュレーター</a>」のアイデアを用いた宿泊室への宿泊を承ります。また上記展覧会にあわせて、内覧会を開催します。</p>
+      <p>From 14th August we are opening an renting room with the ideas from "<a href="http://flightsimulator.soft.works/">Flight Simulator</a>," an app created by Laurel Schwulst and published by Soft.</p>
+      <p><u>* Many Thanks to <a href="http://aarati.me/">Aarati Akkapeddi</a> for creating the pin designs.</u></p>
+    </div>
+    <div class="text">
+      <p>7月 July</p>
+      <ul class="date">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li><b>19</b>
+          <p class="event">Laurel arrive Osaka</p>
+        </li>
+        <li><b>20</b>　
+          <p class="event">7pm-<br/><br/>露天神社（お初天神） 例大祭（夏祭）</p>
+        </li>
+        <li><b>21</b>
+          <p class="event">Elliott arrive Osaka</p>
+        </li>
+        <li><b>22</b>
+        </li>
+        <li><b>23</b>
+        </li>
+        <li><b>24</b>
+          <div class="pickup">天神祭</div>
+        </li>
+        <li><b>25</b>
+          <div class="pickup">天神祭</div>
+          <p class="event">7:30pm-<br/><br/>屋上で一緒に花火を見ませんか？</p>
+        </li>
+        <li><b>26</b>
+        </li>
+        <li><b>27</b>
+        </li>
+        <li><b>28</b>　
+          <div class="pickup">7pm-<p>Opening party</p>
+            <u>Cooking Day</u></div>
+          </li>
+          <li><b>29</b>
+            <p class="event"><u>First day of exhibition</u></p>
+          </li>
+          <li><b>30</b>
+          </li>
+          <li><b>31</b>
+            <p class="event">goodbye Elliott</p>
+          </li>
+        </ul>
+        <hr/>
+        <p>8月 August</p>
+        <ul class="date">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li><b>1</b>
+          </li>
+          <li><b>2</b>　
+          </li>
+          <li><b>3</b>
+          </li>
+          <li><b>4</b>　
+            <p class="event">6pm-<br/><br/>盆踊りに行こう</p>
+          </li>
+          <li><b>5</b>　
+            <p class="event">7pm-<br/><br/>折り紙で遊ぼう</p>
+          </li>
+          <li><b>6</b>
+          </li>
+          <li><b>7</b>
+          </li>
+          <li><b>8</b>
+          </li>
+          <li><b>9</b>
+          </li>
+          <li><b>10</b>
+            <p class="event"><u>Last day of exhibition</u></p>
+            <div class="pickup">7pm-<p>Secret closing party</p></div>
+          </li>
+          <li><b>11</b>
+            <p class="event"><i>京丹後でキャンプ</i></p>
+          </li>
+          <li class="red"><b>12</b>
+            <p class="event"><i>京丹後でキャンプ</i></p>
+          </li>
+          <li class="red"><b>13</b>
+            <p class="event">goodbye Laurel</p>
+          </li>
+        </ul>
+        <h4>Airbnb Flight Simulator Room Available on 8.14-9.15.2019</h4>
+        <h2>一泊一部屋 7000yen [5名まで宿泊可]</h2>
+        <hr/>
+      </div>
+      <div class="more">
+        <u>ローレル・シュルスト Laurel Schwulst</u>
+        <p>ローレル・シュルストはデザイナー、作家、そしてウェブマスターです。<br/>
+          彼女は動物、公共スペース、雰囲気、書くこととウェブサイト、名前とその由来、自由な思考、落ち着いた技術、退屈なミステリー、アミニズム、風、そして喜びについて考えることを好みます。<br/>
+          彼女はニューヨークに住んでいます。今年の初めに、彼女はFlight Simulatorをリリースしました。それはソフトアプリケーションによって発行された新しい旅行アプリです。<br/>
+          秋には、エール大学で「メタデータとして書く」と呼ばれるコースを教えます。<br/>
+          過去にはザ・クリエイティブ・インディペンデントでクリエイティブディレクターを務めていました。
+        </p>
+        <p><a href="http://laurelschwulst.com/">laurelschwulst.com</a></p>
+      </div>
+      <div class="more">
+        <u>エリオット・コスト Elliott Cost</u>
+        <p>エリオット・コストはハワイのマウイ島出身のアーティスト・デザイナーです。
+          <br/>現在、彼はベル・キオスクと名付けられたデザイン活動をしています。<br/>
+          過去にはキックスターターによる出版物、ザ・クリエイティブ・インディペンデントで仕事をしていました。
+        </p>
+        <p><a href="https://elliott.computer/">elliott.computer</a></p>
+      </div>
+    </section>
+  </body>
+  </html>

@@ -1,64 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>FS1 by 天気 | 🐴</title>
-<style>
-html {color: #fff; background-color: #111; font-family: "ＭＳ 明朝","MS Mincho"; sans-serif;}
-body {margin:0; padding:0;}
-a {color: #eee; font-weight: normal; text-decoration: none;}
-a:hover {background-color: #eee; color: #111; font-style:oblique;}
-h1 {font-size: 3vw; font-weight: normal; float: left; margin: 0; letter-spacing: 0.04rem;}
-h2 {font-size: 2vw; font-weight: normal; line-height: 4vw; float: left; margin: 0 1vw; letter-spacing: 0.04rem;}
-h3 {font-size: 3vw; font-weight: normal; float: right; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-h4 {font-size: 3vw; font-weight: normal; text-align: center; margin-top: 1vw; margin: 0; letter-spacing: 0.04rem;}
-.name {font-size: 4.5vw; line-height: 7vw; font-weight: normal; margin: 0;}
-.text {padding: 0; font-size: 2vw; line-height: 3vw; letter-spacing: 0.07rem;}
-i {font-size: 1.5vw; text-decoration:underline wavy #000;}
-table {padding: 4vw 0 0;}
-u {font-size: 2vw; line-height: 3vw;}
-td {vertical-align: super; padding: 1vw 2vw 0;}
-.selected {float: right;}
-.contents {padding: 4vw;}
-.info {font-size: 1.5vw; line-height: 3vw; margin: 4vw 2vw; padding: 4vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.events {line-height: 3vw; margin: 4vw 2vw; padding: 2vw 0; letter-spacing: 0.07rem; border-top: solid 1px #;}
-.jp{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: left; width: 44vw;}
-.en{font-size: 1.5vw; line-height: 2.5vw; padding: 1vw; float: right; width: 44vw;}
-hr {border: 0; height: 2vw; clear: both;}
-.tt{font-size: 2vw; margin: 0 1em 0 0; line-height: 1.5em; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>FS1 by 天気 | 🐴</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  :root {
+    --main-text: #fff;
+    --main-color: #111;
+    --sub-color: #eee;
+  }
+
+  #main img {
+    max-height: 100%;
+    max-width: 47.5%;
+  }
+
+  #info {
+    columns: 2;
+  }
+
+  @media screen and (max-width: 750px) {
+    #info {
+      columns: 1;
+    }
+  }
+  </style>
 </head>
 <body>
-<div class="contents">
-<h2>2019年6月17日-6月29日<br/>6.17-6.29.2019</h2>
-<h3>FS1</h3>
-<hr/>
-<h1>[Exhibition]</h1><h2>by</h2>
-<h2>天気 | 🐴</h2>
-<hr/>
-<p id="name"><b class="name"><a href="https://twitter.com/a_sho_z">Weather</a></b> (F)
-<b class="name"> | <a href="https://twitter.com/kazumasasajima">Looking from the horse</a></b> (S)
-<hr/>
-<div class="text">
-<p>This exhibition is pehu self</p>
-<hr/>
-<img src="https://d2w9rnfcy7mm78.cloudfront.net/4382447/original_21ee4808763678602c209da8b01568ea.jpg?1559378211" width="200vw">
-<img src="https://d2w9rnfcy7mm78.cloudfront.net/4382443/large_ffe242aa1f0f8304e0045fd65e1c91a4.jpg?1559378077" width="200vw">
-<h3><a href="http://vg.pe.hu/2f/fs1.html">vg.pe.hu/2f/fs1.html</a></h3>
-</div>
-</div>
-<div class="info">
-<p>内容:<br/>
-・ペフにあるものあったものを用いた作品のようなものの展示・販売<br/>
-・会期中には、簡単なDIYワークショップなどの催しを開催<br/>
-・7月に開催を予定する「造り物」という文化のプレゼンテーション</p>
-<hr/>
-<p>目標:<br/>
-・３階の改装を完了させる。その中で生まれた副産物のようなものを、次の創作に繋げる方法を考える<br/>
-・作品のようなものを用いて、これまでよりもさらに綺麗に展覧会を構成できるギャラリーをつくる<br/>
-・会期中に改装を完了させる予定の3階にある2部屋の使用用途を考え、それを紹介する催しを実施する<br/>
-・物をつくる過程を見せることで、ものづくりの楽しさや豊かさを共有する</p>
-</div><hr/>
-</div>
+  <main id="main">
+    <h1>FS1</h1>
+    <h2>2019年6月17日-6月29日<br/>6.17-6.29.2019</h2>
+    <hr/>
+    <h3><b>[Exhibition]</b> by 天気 | 🐴</h3>
+    <hr/>
+    <p class="name">
+      <b>Weather</b> (F)
+      <b> | Looking from the horse</b> (S)
+    </p>
+    <hr/>
+    <div class="text">
+      <p>This exhibition is pehu self</p>
+    </div>
+    <div class="images">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/4382447/original_21ee4808763678602c209da8b01568ea.jpg?1559378211">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/4382443/large_ffe242aa1f0f8304e0045fd65e1c91a4.jpg?1559378077">
+    </div>
+    <h1><a href="http://vg.pe.hu/2f/fs1.html">vg.pe.hu/2f/fs1.html</a></h1>
+  </main>
+
+  <section id="info">
+    <div class="more">
+      <u>内容</u>
+      <p>
+        ・ペフにあるものあったものを用いた作品のようなものの展示・販売<br/>
+        ・会期中には、簡単なDIYワークショップなどの催しを開催<br/>
+        ・7月に開催を予定する「造り物」という文化のプレゼンテーション
+      </p>
+    </div>
+    <div class="more">
+      <u>目標</u>
+      <p>
+        ・３階の改装を完了させる。その中で生まれた副産物のようなものを、次の創作に繋げる方法を考える<br/>
+        ・作品のようなものを用いて、これまでよりもさらに綺麗に展覧会を構成できるギャラリーをつくる<br/>
+        ・会期中に改装を完了させる予定の3階にある2部屋の使用用途を考え、それを紹介する催しを実施する<br/>
+        ・物をつくる過程を見せることで、ものづくりの楽しさや豊かさを共有する
+      </p>
+    </div>
+  </section>
 </body>
 </html>
