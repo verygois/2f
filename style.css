@@ -112,23 +112,25 @@ hr {
   min-height: 100vh;
   box-sizing: border-box;
   padding: 1rem;
+  font-size: 1rem;
   column-fill: auto;
   break-inside: avoid-page;
   background-color: var(--main-color);
 }
 
-#info .more {
+#info .more,
+#info .text {
   box-sizing: border-box;
-  font-size: 0.9rem;
   padding: 1rem;
+}
+
+#info .more {
   break-inside: avoid;
+  font-size: 0.9rem;
 }
 
 #info .text {
   column-span: all;
-  box-sizing: border-box;
-  font-size: 1rem;
-  padding: 1rem;
 }
 
 #info img {
