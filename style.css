@@ -1,3 +1,7 @@
+html {
+    height: -webkit-fill-available;
+}
+
 body,
 h1,
 h2,
@@ -32,27 +36,27 @@ h1,
 h2,
 h3 {
   font-weight: normal;
-  letter-spacing: 0.1vw;
+  letter-spacing: 0.05rem;
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 2rem;
 }
 
 h2,
 h3,
-.text p {
-  font-size: 2vw;
+#main .text p {
+  font-size: 1rem;
   line-height: 200%;
 }
 
 h3 b,
-.text b {
-  font-size: 3vw;
+#main .text b {
+  font-size: 1.5rem;
 }
 
-.name b {
-  font-size: 4.5vw;
+#main .name b {
+  font-size: 2.5rem;
   line-height: 150%;
   font-weight: normal;
 }
@@ -67,36 +71,52 @@ h2 {
 
 h3,
 hr,
-.text,
+#main .text,
 #info {
   clear: both;
 }
 
 hr {
   border: none;
-  height: 2vw;
+  height: 0.5rem;
 }
 
-.contents {
+#main {
   box-sizing: border-box;
   padding: 4.5vw;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  max-height: -webkit-fill-available;
 }
 
-.text {
-  margin-bottom: 4.5vw;
+#main .text {
+  margin-bottom: 2rem;
 }
 
-.text p {
+#main .text p {
   padding: 0;
   margin: 0;
-  letter-spacing: 0.2vw;
+  letter-spacing: 0.1rem;
+}
+
+#main .images {
+  height: 55vh;
+  position: absolute;
+  bottom: 1vw;
+  z-index: -1;
 }
 
 #info {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  min-height: -webkit-fill-available;
+  box-sizing: border-box;
   padding: 1rem;
-  columns: 250px auto;
   column-fill: auto;
   break-inside: avoid-page;
+  background-color: var(--main-color);
 }
 
 #info .more {
@@ -104,6 +124,13 @@ hr {
   font-size: 0.9rem;
   padding: 1rem;
   break-inside: avoid;
+}
+
+#info .text {
+  column-span: all;
+  box-sizing: border-box;
+  font-size: 1rem;
+  padding: 1rem;
 }
 
 #info img {
@@ -114,47 +141,42 @@ hr {
   h1,
   h2,
   h3 {
+    letter-spacing: 0.1vw;
     letter-spacing: 0.05rem;
   }
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 5vw;
   }
 
   h2,
   h3,
   .text p {
-    font-size: 0.9rem;
+    font-size: 2.5vw;
   }
 
   h3 b {
-    font-size: 1.25rem;
+    font-size: 3vw;
   }
 
   .name b {
-    font-size: 2rem;
+    font-size: 5.5vw;
   }
 
   hr {
-    height: 0.5rem;
+    height: 2vw;
   }
 
   .text {
-    margin-bottom: 2rem;
+    margin-bottom: 4.5vw;
   }
 
   .text p {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.25vw;
   }
 
   #info {
     margin-top: 2rem;
     columns: 2;
-  }
-}
-
-@media print {
-  .contents {
-    min-height: 100vh;
   }
 }

@@ -9,27 +9,37 @@
 
   <link rel="stylesheet" href="style.css" />
   <style>
-    @font-face {
-        font-family: "MS Mincho", serif;
-        src: url("https://vg.pe.hu/jp/MSMincho.ttf");
-    }
+  @font-face {
+    font-family: "MS Mincho", serif;
+    src: url("https://vg.pe.hu/jp/MSMincho.ttf");
+  }
 
-    :root {
-      --main-text: #000;
-      --main-color: red;
-      --sub-color: yellow;
-      --main-font: "MS Mincho", serif;
-      --sub-font: "Times New Roman", serif;
-    }
+  :root {
+    --main-text: #000;
+    --main-color: red;
+    --sub-color: yellow;
+    --main-font: "MS Mincho", serif;
+    --sub-font: "Times New Roman", serif;
+  }
 
-    .contents img {
-      width: 100%;
-      max-width: 500px;
+  #main img {
+    max-height: 100%;
+    max-width: 95%;
+  }
+
+  #info {
+    columns: 300px auto;
+  }
+
+  @media screen and (max-width: 750px) {
+    #info {
+      columns: 2;
     }
+  }
   </style>
 </head>
 <body>
-  <main class="contents">
+  <main id="main">
     <h1>K</h1>
     <h2>2019年5月26日-<br/>5.26.2019-</h2>
     <hr/>
@@ -43,7 +53,9 @@
       <p>会場 Venue</p>
       <p>34°40'12.8"N 135°30'11.7"E</p>
     </div>
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/4409409/original_eeaf742886e833746089c9e9768276a2.jpg?1559726353">
+    <div class="images">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/4409409/original_eeaf742886e833746089c9e9768276a2.jpg?1559726353">
+    </div>
     <h1><a href="http://vg.pe.hu/2f/k.html">vg.pe.hu/2f/k.html</a></h1>
   </main>
 
@@ -58,16 +70,16 @@
       <p>参加費 : 0.002 BTC</p>
       <img src="https://attachments.timetreeapp.com/calendar/bea4/2019-05-23/27440394-1558576593504.jpg">
     </div>
-      <div class="more">
-        <u>K PARTY</u>
-        <p>
-          6月15日(土)
-          <br/>Saturday, June 15
-          <br/>5am -
-        </p>
-        <p>1 BAANG! : 0.00001 BTC</p>
-        <img src="https://attachments.timetreeapp.com/calendar/33b6/2019-05-23/27440394-1558576608432.jpg">
-      </div>
+    <div class="more">
+      <u>K PARTY</u>
+      <p>
+        6月15日(土)
+        <br/>Saturday, June 15
+        <br/>5am -
+      </p>
+      <p>1 BAANG! : 0.00001 BTC</p>
+      <img src="https://attachments.timetreeapp.com/calendar/33b6/2019-05-23/27440394-1558576608432.jpg">
+    </div>
   </section>
 </body>
 </html>

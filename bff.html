@@ -10,20 +10,30 @@
   <link rel="stylesheet" href="style.css" />
   <style>
 
-    :root {
-      --main-text: #fbc264;
-      --main-color: #07d34f;
-      --sub-color: #fbc264;
-    }
+  :root {
+    --main-text: #fbc264;
+    --main-color: #07d34f;
+    --sub-color: #fbc264;
+  }
 
-    .contents img {
-      width: 47.5%;
-      max-width: 450px;
+  #main img {
+    max-height: 100%;
+    max-width: 45%;
+  }
+
+  #info {
+    columns: 300px auto;
+  }
+
+  @media screen and (max-width: 750px) {
+    #info {
+      columns: 2;
     }
+  }
   </style>
 </head>
 <body>
-  <main class="contents">
+  <main id="main">
     <h1>Best Friends from France</h1>
     <h2>2019年4月4日-4月30日<br/>4.4-4.30.2019</h2>
     <hr/>
@@ -50,8 +60,10 @@
         by LAGON will starting to sell in JAPAN!
       </h3>
     </div>
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/4129555/large_23a213d8607db20eb3b3c3dbd4475420.jpg?1555898860">
-    <img src="https://d2w9rnfcy7mm78.cloudfront.net/4129551/large_3767643aa296c4bd6e23d6b799c5e983.jpg?1555898826">
+    <div class="images">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/4129555/large_23a213d8607db20eb3b3c3dbd4475420.jpg?1555898860">
+      <img src="https://d2w9rnfcy7mm78.cloudfront.net/4129551/large_3767643aa296c4bd6e23d6b799c5e983.jpg?1555898826">
+    </div>
     <h1><a href="http://vg.pe.hu/2f/bff.html">vg.pe.hu/2f/bff.html</a></h1>
   </main>
 
