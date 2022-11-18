@@ -34,7 +34,8 @@ a:hover {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: normal;
   letter-spacing: 0.05rem;
 }
@@ -76,6 +77,10 @@ hr,
   clear: both;
 }
 
+h4 {
+  text-align: center;
+}
+
 hr {
   border: none;
   height: 0.5rem;
@@ -102,6 +107,12 @@ hr {
   position: absolute;
   bottom: 4.5vw;
   z-index: -1;
+}
+
+.back {
+  position: absolute;
+  bottom: 4.5vw;
+  right: 4.5vw;
 }
 
 #info {
