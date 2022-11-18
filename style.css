@@ -99,9 +99,8 @@ hr {
 }
 
 #main .images {
-  height: 55vh;
   position: absolute;
-  bottom: 1vw;
+  bottom: 2.5vw;
   z-index: -1;
 }
 
