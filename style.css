@@ -142,11 +142,10 @@ hr {
   h2,
   h3 {
     letter-spacing: 0.1vw;
-    letter-spacing: 0.05rem;
   }
 
   h1 {
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 
   h2,
@@ -160,7 +159,7 @@ hr {
   }
 
   .name b {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 
   hr {
