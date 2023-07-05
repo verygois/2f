@@ -15,7 +15,8 @@ body {
   margin: 0;
 }
 
-a {
+a,
+#url {
   color: var(--sub-color);
   text-decoration: none;
 }
@@ -113,7 +114,7 @@ hr {
   width: 100%;
   min-height: 100vh;
   box-sizing: border-box;
-  padding: 0;
+  padding: 1.25vw 2.5vw;
   font-size: 1rem;
   column-fill: auto;
   break-inside: avoid-page;
@@ -123,7 +124,7 @@ hr {
 #info .more,
 #info .text {
   box-sizing: border-box;
-  padding: 2.5vw;
+  padding: 2.5vw 1.25vw;
 }
 
 #info .more {
