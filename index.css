@@ -17,33 +17,29 @@ body,
 #event {
   font-family: "MS Mincho", "SimSong", serif;
   font-size: 1rem;
-  width: 95%;
   padding: 0;
-  margin: 1rem auto 2.5%;
+  margin: 1rem 1rem 2.5%;
   letter-spacing: 0.05rem;
 }
 
 #event .menu {
   width: 100%;
-  display: -webkit-flex;
-  margin: 0 0 2.5%;
-  padding: 0;
-  list-style-type: none;
-  -webkit-flex-wrap: wrap;
+  clear: both;
+  display: flex;
   flex-wrap: wrap;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-align-items: normal;
-  align-items: normal;
+  padding:  0 0 1em;
+  margin: 0 0 2.5%;
 }
 
-#event div {
-  padding: 0 0 0.5rem;
+#event section,
+#event p {
+  padding: 0;
 }
 
-#event div:not(.menu) {
+#event p {
+  margin: 0.25rem auto;
   max-width: 1000px;
-  margin: auto;
 }
 
 #event a {
@@ -54,6 +50,12 @@ body,
 
 #event a:hover {
   color: red;
+}
+
+#event section h1 {
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 #event b {
@@ -75,10 +77,4 @@ body,
 #event .open {
   font-family: "Arial Narrow", Arial, sans-serif;
   font-style: oblique;
-}
-
-hr {
-  clear: both;
-  border: 0 none;
-  padding-top: 1em;
 }

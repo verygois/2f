@@ -1,124 +1,123 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width">
-  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>2F | 1.7 - 8.31.2019</title>
+  <meta name="author" content="∧°┐ | creative, community space">
+  <link rel="icon" href="/jp/2019/pr/2019.png">
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="https://vg.pe.hu/jp/floor.css" />
-  <title>∧° ┐ | creative, community space</title>
 </head>
-
 <body>
-  <div id="event">
-    <div class="menu">
-      <p>
+  <article id="event">
+    <section class="menu">
+      <h1>
         <b class="pehu">∧°┐</b>
         <span class="tt">2F</span>
-      </p>
+      </h1>
       <sup class="open">1.7 - 8.31.2019</sup>
-    </div>
-    <hr />
-    <div>
+    </section>
+    <p>
       <a class="link" href="/2f/tws1.html">
         <span class="tt">TWS 1</span>
         <u>Fumio Kohama | Stefan Alexander | Shintaro Matsuo</u>
         <span class="open">1.7-1.19.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/hf1.html">
         <span class="tt">HF+S1</span>
         <u>Masami Baba | Nobuto Okawahara | Gaku Kurokawa | Shoji Funakawa</u>
         <span class="open">1.26-1.27.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/ms1.html">
         <span class="tt">MS 1</span>
         <u>Isshuumawattetsurai | Mizuho Kuki | Rina Cho</u>
         <span class="open">2.4-2.16.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/ns5.html">
         <span class="tt">NS 5</span>
         <u>Niceshop Su 5th anniversary exhibition</u>
         <span class="open">2.22-3.8.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/nakayoshi_fair.html">
         <span class="tt">なかよしフェアー</span>
         <u>Scent | Pure Voyage | tbpj | abi</u>
         <span class="open">3.17-3.30.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/bff.html">
         <span class="tt">Signed Curtain</span>
         <u>Jean-Philippe Bretin | Vanessa Dziuba</u>
         <span class="open">4.17-4.30.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/bff.html">
         <span class="tt">フランスのカード</span>
         <u>Sammy Stein | Séverine Bascouert (L'Institut Sérigraphique)</u>
         <span class="open">4.26-4.30.2019 <sup>[1F]</sup></span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/ns1.html">
         <span class="tt">NS1</span>
         <u>Nicholas Strobelt | Joseph Torres | Yuu Takamizawa</u>
         <span class="open">5.27-6.8.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/fs1.html">
         <span class="tt">FS1</span>
         <u>天気 | 🐴</u>
         <span class="open">6.17-6.29.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/tsukurimono.html">
         <span class="tt">造り物</span>
         <u>Tsukurimono</u>
         <span class="open">7.23-7.27.2019 <sup>[1F]</sup></span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/sakura.html">
         <span class="tt">さくら</span>
         <u>Kagomoto Shinichi</u>
         <span class="open">7.24-7.27.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/greenpeople.html">
         <span class="tt">Green People</span>
         <u>Laurel Schwulst, Elliott Cost</u>
         <span class="open">7.29-8.10.2019</span>
       </a>
-    </div>
-    <div>
+    </p>
+    <p>
       <a class="link" href="/2f/finishes.html">
         <span class="tt">Tongue finishes back at the root of itself</span>
         <u>Ferran Pla and Ana Martinez</u>
         <span class="open">8.19-8.31.2019</span>
       </a>
-    </div>
-  </div>
-  <div id="index"></div>
+    </p>
+  </article>
+  <main id="index"></main>
+  <script type="text/javascript">
+  fetch('/jp/floor.html')
+  .then(response => response.text())
+  .then(innerHTML => {
+    document.querySelector('#index').innerHTML = innerHTML;
+  });
+  </script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-  $(function () {
-    $("#index").load("/jp/floor.html");
-  })
-</script>
-
 </html>
