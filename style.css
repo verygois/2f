@@ -125,7 +125,15 @@ hr {
 #info .full,
 #info .text {
   box-sizing: border-box;
+}
+
+#info .more {
   padding: 2.5vw 1.25vw;
+}
+
+#info .full,
+#info .text {
+  padding: 1.25vw;
 }
 
 #info .more {
