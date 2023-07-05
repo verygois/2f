@@ -122,6 +122,7 @@ hr {
 }
 
 #info .more,
+#info .full,
 #info .text {
   box-sizing: border-box;
   padding: 2.5vw 1.25vw;
@@ -132,6 +133,7 @@ hr {
   font-size: 90%;
 }
 
+#info .full,
 #info .text {
   column-span: all;
   width: 100%;
@@ -177,7 +179,7 @@ hr {
   }
 
   #main .text {
-    margin-bottom: 4.5vw;
+    margin-bottom:;
   }
 
   #main .text p {
@@ -185,6 +187,7 @@ hr {
   }
 
   #info,
+  #info .full,
   #info .text {
     font-size: 4vw;
   }
