@@ -133,6 +133,7 @@ hr {
 
 #info .text {
   column-span: all;
+  width: 100%;
 }
 
 #info img {
@@ -140,9 +141,7 @@ hr {
 }
 
 .back {
-  position: absolute;
-  bottom: 2.5vw;
-  right: 2.5vw;
+  text-align: right;
   padding: 0;
   margin: 0;
 }
@@ -193,6 +192,12 @@ hr {
 @media print {
   @page {
     size: B5 landscape;
+  }
+
+  #info .text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 
   .back {
