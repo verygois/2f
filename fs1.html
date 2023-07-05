@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>FS1 by 天気 | 🐴</title>
-
+  <meta name="author" content="∧°┐ | creative, community space">
+  <meta name="description" content="2019年6月17日-6月29日 | This is The Exhibition of Sustainable Development Goals" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ja_JP" />
+  <meta property="og:type" content="article">
   <meta property="og:site_name" content="∧° ┐ | creative, community space" />
+  <meta property="og:title" content="FS1 by 天気 | 🐴" />
+  <meta property="og:description" content="2019年6月17日-6月29日 | This is The Exhibition of Sustainable Development Goals" />
   <meta property="og:url" content="https://vg.pe.hu/2f/fs1.html" />
-  <meta property="og:image" content="https://64.media.tumblr.com/490290d957989e6d27dfa069bf7c27d8/980cac6e37e83422-1e/s1280x1920/220c73439ad922a79e20ad918a0cb194208fa754.png" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="https://64.media.tumblr.com/490290d957989e6d27dfa069bf7c27d8/980cac6e37e83422-1e/s1280x1920/220c73439ad922a79e20ad918a0cb194208fa754.png" />
-
+  <meta property="og:image" content="https://vg.pe.hu/2f/pr/fs1.png" />
+  <meta name="twitter:title" content="FS1 by 天気 | 🐴" />
+  <meta name="twitter:description" content="2019年6月17日-6月29日 | This is The Exhibition of Sustainable Development Goals" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="https://vg.pe.hu/2f/pr/fs1.png" />
+  <link rel="icon" href="/jp/2019/pr/2019.png">
   <link rel="stylesheet" href="style.css" />
   <style>
   :root {
     --main-text: #fff;
     --main-color: #111;
     --sub-color: #eee;
+  }
+
+  #main h1,
+  #main h2,
+  #main h3,
+  #main .name,
+  #main .text {
+    text-shadow: #fff 1px 1px;
   }
 
   #main img {
@@ -33,7 +45,7 @@
     columns: 2;
   }
 
-  @media screen and (max-width: 750px) {
+  @media (orientation: portrait) {
     #info {
       columns: 1;
     }
@@ -41,37 +53,35 @@
   </style>
 </head>
 <body>
-  <main id="main">
+  <article id="main">
     <h1>FS1</h1>
     <h2>2019年6月17日-6月29日<br/>6.17-6.29.2019</h2>
-    <hr/>
     <h3><b>[Exhibition]</b> by 天気 | 🐴</h3>
     <hr/>
     <p class="name">
       <b>Weather</b> (F)
       <b> | Looking from the horse</b> (S)
     </p>
-    <hr/>
-    <div class="text">
-      <p>This exhibition is pehu self</p>
-    </div>
-    <div class="images">
-      <img src="https://d2w9rnfcy7mm78.cloudfront.net/4382447/original_21ee4808763678602c209da8b01568ea.jpg?1559378211">
-      <img src="https://d2w9rnfcy7mm78.cloudfront.net/4382443/large_ffe242aa1f0f8304e0045fd65e1c91a4.jpg?1559378077">
-    </div>
-    <h1><a href="https://vg.pe.hu/2f/fs1.html">vg.pe.hu/2f/fs1.html</a></h1>
-  </main>
+    <section class="text">
+      <p>This is The Exhibition of Sustainable Development Goals</p>
+    </section>
+    <section class="images">
+      <img src="img/fs2.jpeg">
+      <img src="img/fs3.jpeg">
+    </section>
+    <p id="url">vg.pe.hu/2f/fs1.html</p>
+  </article>
 
-  <section id="info">
-    <div class="more">
+  <article id="info">
+    <section class="more">
       <u>内容</u>
       <p>
         ・ペフにあるものあったものを用いた作品のようなものの展示・販売<br/>
         ・会期中には、簡単なDIYワークショップなどの催しを開催<br/>
         ・7月に開催を予定する「造り物」という文化のプレゼンテーション
       </p>
-    </div>
-    <div class="more">
+    </section>
+    <section class="more">
       <u>目標</u>
       <p>
         ・３階の改装を完了させる。その中で生まれた副産物のようなものを、次の創作に繋げる方法を考える<br/>
@@ -79,18 +89,14 @@
         ・会期中に改装を完了させる予定の3階にある2部屋の使用用途を考え、それを紹介する催しを実施する<br/>
         ・物をつくる過程を見せることで、ものづくりの楽しさや豊かさを共有する
       </p>
-    </div>
+    </section>
 
-    <div class="text">
-      <h4>
-        <a href="https://vg.pe.hu/2f/">∧°┐</a>
-        | creative, community space
-      </h4>
-    </div>
-
-    <h1 class="back">
-      <a onclick="history.back(-1);return false;">↵</a>
-    </h1>
-  </section>
+    <nav class="text">
+      <h4>∧°┐ | creative, community space</h4>
+      <p class="back">
+        <a onclick="history.back(-1);return false;">↵</a>
+      </p>
+    </nav>
+  </article>
 </body>
 </html>

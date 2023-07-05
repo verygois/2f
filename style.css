@@ -147,7 +147,7 @@ hr {
   margin: 0;
 }
 
-@media screen and (max-width: 550px) {
+@media (orientation: portrait) {
   h1,
   h2,
   h3 {
@@ -201,7 +201,8 @@ hr {
     right: 0;
   }
 
-  .back {
+  .back,
+  .noprint {
     display: none;
   }
 }
