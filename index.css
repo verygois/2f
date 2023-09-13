@@ -1,12 +1,16 @@
+@page {
+  size: landscape;
+}
+
+html {
+  font-size: 16px;
+}
+
 body,
 #event .menu,
 #event .menu p {
   padding: 0;
   margin: 0;
-}
-
-#index {
-  padding: 2.5%;
 }
 
 @font-face {
@@ -21,7 +25,7 @@ body,
   place-items: center;
   min-height: 100vh;
   font-family: "MS Mincho", "SimSong", serif;
-  font-size: 1rem;
+  font-size: 100%;
   padding: 0;
   margin: 0;
   letter-spacing: 0.05rem;
@@ -89,4 +93,14 @@ body,
 #event .open {
   font-family: "Arial Narrow", Arial, sans-serif;
   font-style: oblique;
+}
+
+@media print {
+  html {
+    font-size: 1.75vh;
+  }
+
+  #floor {
+    display: none;
+  }
 }

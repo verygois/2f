@@ -120,12 +120,12 @@
       </p>
     </section>
   </article>
-  <main id="index"></main>
+  <main id="floor"></main>
   <script type="text/javascript">
   fetch('/jp/floor.html')
   .then(response => response.text())
   .then(innerHTML => {
-    document.querySelector('#index').innerHTML = innerHTML;
+    document.querySelector('#floor').innerHTML = innerHTML;
   });
   </script>
 </body>
