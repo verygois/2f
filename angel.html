@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,57 +15,59 @@
   <meta content="https://vg.pe.hu/2f/pr/angel.png" property="og:image">
   <meta content="https://vg.pe.hu/2f/pr/angel.png" name="twitter:image:src">
 
-  <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js"></script>
   <style>
-  :root {
-    --main-text: #fff;
-    --main-color: red;
-    --sub-color: yellow;
-  }
-
-  #main h1,
-  #main h2,
-  #main h3,
-  #main .name,
-  #main .text {
-    text-shadow: #000 1px 1px;
-  }
-
-  #main img {
-    max-height: 55vh;
-    max-width: 95%;
-  }
-
-  #info {
-    columns: 300px auto;
-  }
-
-  @media (orientation: portrait) {
-    #info {
-      columns: 2;
+    :root {
+      --main-text: #fff;
+      --main-color: red;
+      --sub-color: yellow;
     }
-  }
+
+    #main h1,
+    #main h2,
+    #main h3,
+    #main .name,
+    #main .text {
+      text-shadow: #000 1px 1px;
+    }
+
+    #main img {
+      max-height: 55vh;
+      max-width: 95%;
+    }
+
+    #info {
+      columns: 300px auto;
+    }
+
+    @media (orientation: portrait) {
+      #info {
+        columns: 2;
+      }
+    }
   </style>
 </head>
+
 <body>
   <article id="main">
     <h1>K</h1>
-    <h2>2019年5月26日-<br/>5.26.2019-</h2>
+    <h2>2019年5月26日-<br />5.26.2019-</h2>
     <h3><b>[Secret Exhibition]</b> by</h3>
     <p class="name">
       <b>爆破片非安全製造団</b>
     </p>
     <section class="text">
       <p>
-        <u>会場 Venue</u><br/>
+        <u>会場 Venue</u><br />
         34°40'12.8"N 135°30'11.7"E
       </p>
     </section>
     <section class="images">
       <img src="img/angel.jpeg">
     </section>
-    <p id="url">vg.pe.hu/2f/angel.html</p>
+    <p id="url"></p>
   </article>
 
   <article class="noprint" id="info">
@@ -72,8 +75,8 @@
       <u>K 製造</u>
       <p>
         6月14日(金)
-        <br/>Friday, June 14
-        <br/>7pm -
+        <br />Friday, June 14
+        <br />7pm -
       </p>
       <p>参加費 : 0.002 BTC</p>
       <img src="img/k-factory.jpeg">
@@ -82,19 +85,17 @@
       <u>K PARTY</u>
       <p>
         6月15日(土)
-        <br/>Saturday, June 15
-        <br/>5am -
+        <br />Saturday, June 15
+        <br />5am -
       </p>
       <p>1 BAANG! : 0.00001 BTC</p>
       <img src="img/k-party.jpeg">
     </section>
 
-    <nav class="text">
-      <h4>∧°┐ | creative, community space</h4>
-      <p class="back">
-        <a onclick="history.back(-1);return false;">↵</a>
-      </p>
-    </nav>
+    <aside class="text">
+      <button id="back" type="button"><b>↵</b></button>
+    </aside>
   </article>
 </body>
+
 </html>

@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <meta content="article" property="og:type">
     <title>Grand Opening Party "Sign"</title>
     <meta name="description" content="2019年1月6日 15:00-21:00 | クリエイティブ・コミュニティスペース ペフ のグランドオープニングパーティーを開催します。" />
-    <link rel="icon" href="icon.png" type="image/png">
-    <link rel="stylesheet" href="style.css" />
+
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js"></script>
     <style>
         :root {
             --main-text: #fff;
@@ -42,7 +45,7 @@
         <section class="text">
             <p>クリエイティブ・コミュニティスペース ペフ のグランドオープニングパーティーを開催します。</p>
         </section>
-        <p id="url">vg.pe.hu/jp/show/sign/</p>
+        <p id="url"></p>
     </article>
 
     <article id="info">
@@ -70,12 +73,10 @@
             </p>
         </section>
 
-        <nav class="text">
+        <aside class="text">
             <h4>∧°┐ | creative, community space</h4>
-            <p class="back">
-                <a onclick="history.back(-1);return false;">↵</a>
-            </p>
-        </nav>
+            <button id="back" type="button"><b>↵</b></button>
+        </aside>
     </article>
 </body>
 

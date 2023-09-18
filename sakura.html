@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,55 +15,58 @@
   <meta content="https://vg.pe.hu/2f/pr/sakura.png" property="og:image">
   <meta content="https://vg.pe.hu/2f/pr/sakura.png" name="twitter:image:src">
 
-  <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js"></script>
   <style>
-  :root {
-    --main-text: #000;
-    --main-color: #F3F3DA;
-    --sub-color: pink;
-  }
-
-  #main img {
-    max-height: 95%;
-    max-width: 95%;
-  }
-
-  #info {
-    columns: 2;
-  }
-
-  @media (orientation: portrait) {
-    #info {
-      columns: 1;
+    :root {
+      --main-text: #000;
+      --main-color: #F3F3DA;
+      --sub-color: pink;
     }
-  }
+
+    #main img {
+      max-height: 95%;
+      max-width: 95%;
+    }
+
+    #info {
+      columns: 2;
+    }
+
+    @media (orientation: portrait) {
+      #info {
+        columns: 1;
+      }
+    }
   </style>
 </head>
+
 <body>
   <article id="main">
     <h1>さくら</h1>
-    <h2>2019年7月24日-7月27日<br/>7.24-7.27.2019</h2>
+    <h2>2019年7月24日-7月27日<br />7.24-7.27.2019</h2>
     <h3><b>[Exhibition]</b> by Kagomoto Shinichi</h3>
     <p class="name">
       <b>籠本 真一</b>
     </p>
     <section class="text">
       <p>香川県の離島に在住する、籠本真一さんの人生初の展覧会を開催します。</p>
-      ２０１６年、大阪から志々島に移住し、２０１８年から「見た通りに描きたくなった」と絵画の制作をはじめました。<br/>
+      ２０１６年、大阪から志々島に移住し、２０１８年から「見た通りに描きたくなった」と絵画の制作をはじめました。<br />
       彼の志々島で作られた作品を、島での彼自身の生活とともに展示します。
     </section>
     <section class="images">
       <img src="img/sakura.png">
     </section>
-    <p id="url">vg.pe.hu/2f/sakura.html</p>
+    <p id="url"></p>
   </article>
 
   <article id="info">
     <section class="full">
-      <i>We are going to held the exhibition of Shinichi Kagomoto who lives in a remote island around Kagawa pref and this is his first exhibition of his life.</i>
+      <i>We are going to held the exhibition of Shinichi Kagomoto who lives in a remote island around Kagawa pref and
+        this is his first exhibition of his life.</i>
       <p>
-        He moved to the island from Osaka in 2016 and he has started drawing since 2018.<br/>
+        He moved to the island from Osaka in 2016 and he has started drawing since 2018.<br />
         He thought he didn't want to draw as he sees.
       </p>
       You will be able to see his works with his life in Shishijima island in this exhibition.
@@ -70,26 +74,25 @@
 
     <section class="more noprint">
       <u>関連イベント Event</u>
-      <p class="name"></u>Tenjin Matsuri</u><br/><b>天神祭</b></p>
-      <p>2019年7月24日-7月25日<br/>7.24-7.25.2019</p>
+      <p class="name"></u>Tenjin Matsuri</u><br /><b>天神祭</b></p>
+      <p>2019年7月24日-7月25日<br />7.24-7.25.2019</p>
       <a href="http://www.tenjinmatsuri.com/tenjinfestival">www.tenjinmatsuri.com</a>
     </section>
 
     <section class="more noprint">
       <u>同時開催</u>
-      <p class="name"></u>Tsukurimono</u><br/><b>造り物</b></p>
-      <p>2019年7月23日-7月27日<br/>7.23-7.27.2019</p>
+      <p class="name"></u>Tsukurimono</u><br /><b>造り物</b></p>
+      <p>2019年7月23日-7月27日<br />7.23-7.27.2019</p>
       at First floor of pehu
       <p>Opening Hours: 12:00-6PM</p>
-      <a href="https://vg.pe.hu/2f/tsukurimono.html">vg.pe.hu/2f/<i>tsukurimono</i>.html</a>
+      <a href="tsukurimono.html">vg.pe.hu/2f/<i>tsukurimono</i>.html</a>
     </section>
 
-    <nav class="text">
+    <aside class="text">
       <h4>∧°┐ | creative, community space</h4>
-      <p class="back">
-        <a onclick="history.back(-1);return false;">↵</a>
-      </p>
-    </nav>
+      <button id="back" type="button"><b>↵</b></button>
+    </aside>
   </article>
 </body>
+
 </html>

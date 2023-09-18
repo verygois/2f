@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,43 +15,45 @@
   <meta content="https://vg.pe.hu/2f/pr/hf1.png" property="og:image">
   <meta content="https://vg.pe.hu/2f/pr/hf1.png" name="twitter:image:src">
 
-  <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js"></script>
   <style>
-  :root {
-    --main-text: #303030;
-    --main-color: #E0E0E0;
-    --sub-color: #303030;
-  }
-
-  #main h1,
-  #main h2,
-  #main h3,
-  #main .name,
-  #main .text {
-    text-shadow: #fff 1px 1px;
-  }
-
-  #main img {
-    max-height: 33vh;
-    max-width: 30%;
-  }
-
-  #info {
-    columns: 300px auto;
-  }
-
-  @media (orientation: portrait) {
-    #info {
-      columns: 2;
+    :root {
+      --main-text: #303030;
+      --main-color: #E0E0E0;
+      --sub-color: #303030;
     }
-  }
+
+    #main h1,
+    #main h2,
+    #main h3,
+    #main .name,
+    #main .text {
+      text-shadow: #fff 1px 1px;
+    }
+
+    #main img {
+      max-height: 33vh;
+      max-width: 30%;
+    }
+
+    #info {
+      columns: 300px auto;
+    }
+
+    @media (orientation: portrait) {
+      #info {
+        columns: 2;
+      }
+    }
   </style>
 </head>
+
 <body>
   <article id="main">
     <h1>HF+S1</h1>
-    <h2>2019年1月26日-1月27日<br/>1.26-1.27.2019</h2>
+    <h2>2019年1月26日-1月27日<br />1.26-1.27.2019</h2>
     <h3><b>[Exhibition]</b> by Masami Baba | Nobuto Okawahara | Gaku Kurokawa | Shoji Funakawa</h3>
     <p class="name">
       <b><a href="https://soundcloud.com/masami-baba">ばばまさみ</a></b> (H)
@@ -61,22 +64,22 @@
     <section class="text">
       <p>これは音と動きにまつわる展覧会です。</p>
       <p>This exhibition about sounds and motions.</p>
-      <hr/>
+      <hr />
     </section>
     <section class="images">
       <img src="img/hf2.jpeg">
       <img src="img/hf3.jpeg">
       <img src="img/hf4.jpeg">
     </section>
-    <p id="url">vg.pe.hu/2f/hf1.html</p>
+    <p id="url"></p>
   </article>
 
   <article id="info">
     <section class="full">
       <h3><u><b>Day 1</b></u></h3>
       <p>
-        1月26日(土)<br/>
-        Satuday, January 26<br/>
+        1月26日(土)<br />
+        Satuday, January 26<br />
         OPEN : 5pm - 9pm
       </p>
       <p>
@@ -84,11 +87,11 @@
         が、公開搬入パフォーマンスを行います。
       </p>
       自由料金制 | name your price
-      <hr/>
+      <hr />
       <h3><u><b>Day 2</b></u></h3>
       <p>
-        1月27日(日)<br/>
-        Sunday, January 27<br/>
+        1月27日(日)<br />
+        Sunday, January 27<br />
         OPEN : 1pm - 6pm
       </p>
       <p>
@@ -96,7 +99,7 @@
         が、公開搬出パフォーマンスを行います。
       </p>
       自由料金制 | name your price
-      <hr/>
+      <hr />
     </section>
     <section class="more noprint">
       <u>ばばまさみ Masami Baba</u>
@@ -127,12 +130,11 @@
       <h3>selected by Hamaji(H) | shoji Funakawa(F) | kazuma Sasajima(S)</h3>
     </section>
 
-    <nav class="text">
+    <aside class="text">
       <h4>∧°┐ | creative, community space</h4>
-      <p class="back">
-        <a onclick="history.back(-1);return false;">↵</a>
-      </p>
-    </nav>
+      <button id="back" type="button"><b>↵</b></button>
+    </aside>
   </article>
 </body>
+
 </html>

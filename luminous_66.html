@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +8,46 @@
   <meta content="article" property="og:type">
   <title>#9JUL19TUE by Luminous Kudler, Jero Route 66</title>
   <meta content="#9JUL19TUE by Luminous Kudler, Jero Route 66" property="og:title">
-  <meta content="Luminous KudlerとJero Route 66と一緒に大阪を観光しフィールドレコーディングを行い、この日録音した音を使ってライブパフォーマンスを行います。" name="description">
-  <meta content="Luminous KudlerとJero Route 66と一緒に大阪を観光しフィールドレコーディングを行い、この日録音した音を使ってライブパフォーマンスを行います。" property="og:description">
+  <meta content="Luminous KudlerとJero Route 66と一緒に大阪を観光しフィールドレコーディングを行い、この日録音した音を使ってライブパフォーマンスを行います。"
+    name="description">
+  <meta content="Luminous KudlerとJero Route 66と一緒に大阪を観光しフィールドレコーディングを行い、この日録音した音を使ってライブパフォーマンスを行います。"
+    property="og:description">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://vg.pe.hu/2f/luminous_66.html" property="og:url">
   <meta content="https://vg.pe.hu/2f/pr/luminous_66.png" property="og:image">
   <meta content="https://vg.pe.hu/2f/pr/luminous_66.png" name="twitter:image:src">
 
-  <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js"></script>
   <style>
-  :root {
-    --main-text: #2b397d;
-    --main-color: #C3D5EB;
-    --sub-color: #eaeabb;
-  }
-
-  #main img {
-    max-height: 55vh;
-    max-width: 47.5%;
-  }
-
-  #info {
-    columns: 2;
-  }
-
-  @media (orientation: portrait) {
-    #info {
-      columns: 1;
+    :root {
+      --main-text: #2b397d;
+      --main-color: #C3D5EB;
+      --sub-color: #eaeabb;
     }
-  }
+
+    #main img {
+      max-height: 55vh;
+      max-width: 47.5%;
+    }
+
+    #info {
+      columns: 2;
+    }
+
+    @media (orientation: portrait) {
+      #info {
+        columns: 1;
+      }
+    }
   </style>
 </head>
+
 <body>
   <article id="main">
     <h1>#9JUL19TUE</h1>
-    <h2>2019年7月9日<br/>7.9.2019</h2>
+    <h2>2019年7月9日<br />7.9.2019</h2>
     <h3><b>[LIVE/PERFORMANCE]</b> by</h3>
     <p class="name">
       <b><a href="https://paufrecordingsltd.bandcamp.com/album/sea-golden-moss">Luminous Kudler</a> |</b>
@@ -55,6 +60,7 @@
       <img src="img/luminous.jpeg">
       <img src="img/66.png">
     </section>
+    <p id="url" hidden></p>
   </article>
 
   <article id="info">
@@ -71,12 +77,11 @@
       <p>この日フィールドレコーディングした音を使って、Luminous KudlerとJero Route 66がライブパフォーマンスを行います。</p>
     </section>
 
-    <nav class="text">
+    <aside class="text">
       <h4>∧°┐ | creative, community space</h4>
-      <p class="back">
-        <a onclick="history.back(-1);return false;">↵</a>
-      </p>
-    </nav>
+      <button id="back" type="button"><b>↵</b></button>
+    </aside>
   </article>
 </body>
+
 </html>

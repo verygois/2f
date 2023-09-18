@@ -15,8 +15,8 @@
   <meta content="https://vg.pe.hu/2f/pr/2f.png" property="og:image">
   <meta content="https://vg.pe.hu/2f/pr/2f.png" name="twitter:image:src">
 
-  <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/index.css" />
   <link rel="stylesheet" href="https://vg.pe.hu/jp/floor.css" />
 </head>
 
@@ -33,7 +33,7 @@
   </article>
   <main id="floor"></main>
   <script type="text/javascript">
-    fetch('contents.html')
+    fetch('assets/contents.html')
       .then(response => response.text())
       .then(innerHTML => {
         document.querySelector('#contents').innerHTML = innerHTML;

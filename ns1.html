@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,35 +15,37 @@
   <meta content="https://vg.pe.hu/2f/pr/ns1.png" property="og:image">
   <meta content="https://vg.pe.hu/2f/pr/ns1.png" name="twitter:image:src">
 
-  <link rel="icon" href="icon.png" type="image/png">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/icon.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js"></script>
   <style>
-  :root {
-    --main-text: #afeeee;
-    --main-color: #b29595;
-    --sub-color: #afeeee;
-  }
-
-  #main img {
-    max-height: 45vh;
-    max-width: 30%;
-  }
-
-  #info {
-    columns: 2;
-  }
-
-  @media (orientation: portrait) {
-    #info {
-      columns: 1;
+    :root {
+      --main-text: #afeeee;
+      --main-color: #b29595;
+      --sub-color: #afeeee;
     }
-  }
+
+    #main img {
+      max-height: 45vh;
+      max-width: 30%;
+    }
+
+    #info {
+      columns: 2;
+    }
+
+    @media (orientation: portrait) {
+      #info {
+        columns: 1;
+      }
+    }
   </style>
 </head>
+
 <body>
   <article id="main">
     <h1>NS1</h1>
-    <h2>2019年5月27日-6月8日<br/>5.27-6.8.2019</h2>
+    <h2>2019年5月27日-6月8日<br />5.27-6.8.2019</h2>
     <h3><b>[Exhibition]</b> by ニコラス・ストロベルト | ヨセフ・トーレス | 高見沢優海</h3>
     <p class="name">
       <b><a href="https://www.nick-strobelt.com/">Nicholas Strobelt</a></b> (N)
@@ -57,7 +60,7 @@
       <img src="img/ns3.jpeg">
       <img src="img/ns4.jpeg">
     </section>
-    <p id="url">vg.pe.hu/2f/ns1.html</p>
+    <p id="url"></p>
   </article>
 
   <article id="info">
@@ -68,8 +71,8 @@
     <section class="more noprint">
       <u>合法F-買い出し</u>
       <p>
-        5月31日(金)<br/>
-        Friday, May 31<br/>
+        5月31日(金)<br />
+        Friday, May 31<br />
         3pm -
       </p>
       <p>合法Fを買いに行きます</p>
@@ -78,8 +81,8 @@
     <section class="more">
       <u>合法F制作</u>
       <p>
-        6月4日(火)<br/>
-        Tuesday, June 4<br/>
+        6月4日(火)<br />
+        Tuesday, June 4<br />
         7pm -
       </p>
       <p>合法Fで何かを制作します</p>
@@ -88,8 +91,8 @@
     <section class="more">
       <u>KFC</u>
       <p>
-        6月8日(土)<br/>
-        Saturday, June 8<br/>
+        6月8日(土)<br />
+        Saturday, June 8<br />
         6am -
       </p>
       <p><i>クロージングパーティを開催します</i></p>
@@ -98,22 +101,26 @@
     <section class="more">
       <u>合法C遊び/違法C遊び</u>
       <p>
-        6月７日(金)<br/>
-        Friday, June 7<br/>
+        6月７日(金)<br />
+        Friday, June 7<br />
         7pm -
       </p>
       <p>合法Cと違法Cで遊びます</p>
       <div class="noprint">
-        <blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/Qb6QWmDlz8">pic.twitter.com/Qb6QWmDlz8</a></p>&mdash; micropiezo (@micropiezo) <a href="https://twitter.com/micropiezo/status/1103380288154013696?ref_src=twsrc%5Etfw">March 6, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet">
+          <p lang="und" dir="ltr"><a href="https://t.co/Qb6QWmDlz8">pic.twitter.com/Qb6QWmDlz8</a></p>&mdash; micropiezo
+          (@micropiezo) <a href="https://twitter.com/micropiezo/status/1103380288154013696?ref_src=twsrc%5Etfw">March 6,
+            2019</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </section>
 
-    <nav class="text">
+    <aside class="text">
       <h4>∧°┐ | creative, community space</h4>
-      <p class="back">
-        <a onclick="history.back(-1);return false;">↵</a>
-      </p>
-    </nav>
+      <button id="back" type="button"><b>↵</b></button>
+    </aside>
   </article>
 </body>
+
 </html>
