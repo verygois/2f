@@ -88,7 +88,6 @@ hr {
   box-sizing: border-box;
   padding: 2.5vw 4vw;
   width: 100%;
-  min-height: 100vh;
 }
 
 #main .text {
@@ -112,7 +111,6 @@ hr {
 
 #info {
   width: 100%;
-  min-height: 100vh;
   box-sizing: border-box;
   padding: 1.25vw 2.5vw;
   font-size: 1rem;
@@ -225,6 +223,11 @@ hr {
 @media print {
   @page {
     size: B5 landscape;
+  }
+  
+  #main,
+  #info {
+    min-height: 100vh;
   }
 
   #info .text {
