@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="../../2019.png">
+    <link rel="stylesheet" href="../index.css" />
+    <meta content="article" property="og:type">
+    <title>全員リリパ</title>
+    <meta content="全員リリパ" property="og:title">
+    <meta content="会場 ひかりのラウンジ" name="description">
+    <meta content="会場 ひかりのラウンジ" property="og:description">
+    <meta content="https://vg.pe.hu/2f/show/relepa/" property="og:url">
+
+    <script src="../script.js"></script>
+    <script>
+        showJSON("index.json");
+    </script>
+
+    <style>
+        body {
+            background: url('000.jpg') top center;
+            background-size: contain;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: green;
+            background: yellow;
+        }
+
+        #cover aside b,
+        #cover aside u,
+        #cover aside time {
+            background: blue;
+            color: #fff;
+            padding: 0.25rem;
+        }
+
+        #player {
+            max-width: 60vw;
+            max-height: calc(100dvh - 3.21rem);
+        }
+    </style>
+</head>
+
+<body>
+    <article id="cover">
+        <h1 id="title"></h1>
+        <nav>
+            <p>
+                <a href="/jp/">∧°┐ | creative, community space</a>
+                <button id="back" type="button">presents</button>
+            </p>
+            <br />
+            <u><a href="https://goo.gl/maps/CLjnnjQTvW62">会場 ひかりのラウンジ</a></u> <br />
+            <br />
+            <time id="date">12.2.2018 Sunday</time><br />
+            <b id="subtitle">Party time 4pm - 8pm</b><br />
+            <b id="door">自由料金制 NAME YOUR PRICE</b><br />
+            <b id="members"></b>
+        </nav>
+        <section>
+            <h2 id="info"></h2>
+        </section>
+        <aside>
+            <u>Timetable</u><br />
+            <time>4:00pm</time><b>さら粉作り (BGM:さら粉 at last)</b><br />
+            <time>4:15pm</time><b>笛で会話する練習</b><br />
+            <b>(マイ笛持ってる人は持ってきて、ない人はストローで作ろう)</b><br />
+            <time>4:30pm</time><b>woopheadclrms</b><br />
+            <time>5:00pm</time><b>#magicringmakefriendship</b><br />
+            <time>5:10pm</time><b>free (BGM:Haruka Numoto)</b><br />
+            <time>5:30pm</time><b>船川翔司</b><br />
+            <time>6:00pm</time><b>泥団子を作る(BGM:ささじまかずま)</b><br />
+            <time>6:40pm</time><b>さら粉 at last</b><br />
+            <time>7:00pm</time><b>Le Makeup</b><br />
+            <time>7:30pm</time><b>Dove</b>
+        </aside>
+        <code id="url" hidden></code>
+    </article>
+    <video id="player" src="video.mp4" autoplay loop muted playsinline></video>
+
+    <!--
+    <article id="footer">
+        <h3>
+            <i>We Release</i><br />
+            Femm by Dove on 2018.11.14 via PURE VOYAGE<br />
+            Monthly Degital Magazin on 2018.12.1 via pehu<br />
+            だるいショップはー on 2018.12.2 by ナイスショップスー
+        </h3>
+        <h3>
+            <iframe style="border: 0; width: 100%; height: 42px;"
+                src="https://bandcamp.com/EmbeddedPlayer/album=11888174/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/"
+                seamless><a href="https://purevoyage1.bandcamp.com/album/femm">Femm Dove</a></iframe>
+        </h3>
+    </article>
+    -->
+</body>
+
+</html>

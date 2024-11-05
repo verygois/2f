@@ -1,0 +1,194 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+h2,
+nav p,
+button,
+footer input {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "MS Mincho";
+    src: url("MSMincho.ttf");
+}
+
+body {
+    font-family: "MS Mincho", "SimSong", monospace;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 500;
+}
+
+footer input {
+    font-size: 300%;
+}
+
+#title {
+    font-size: 150%;
+}
+
+h2,
+nav time,
+a {
+    font-size: 111%;
+}
+
+h3,
+nav a,
+nav b {
+    font-size: 100%;
+}
+
+#cover aside {
+    font-size: 90%;
+}
+
+button,
+#info u {
+    font-size: 75%;
+}
+
+h2,
+h3,
+#cover nav {
+    line-height: 155%;
+}
+
+#cover aside {
+    line-height: 175%;
+}
+
+nav time,
+#info u {
+    text-decoration: double underline;
+}
+
+button,
+footer input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+}
+
+h1,
+#cover section {
+    padding: 0.5rem;
+}
+
+nav time,
+nav p,
+nav u,
+nav b {
+    padding: 0.25rem;
+}
+
+#cover aside,
+footer input {
+    padding: 0.25rem 0.5rem;
+}
+
+#cover nav,
+#cover section {
+    margin: 0.5rem;
+}
+
+a,
+nav u {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav time,
+nav p,
+nav b,
+#cover section {
+    color: #000;
+    background: #fff8;
+}
+
+nav u {
+    color: #fff;
+    background: red;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: space-between;
+    place-items: start;
+}
+
+article aside {
+    place-self: end;
+    width: 100%;
+}
+
+@media (orientation: landscape) {
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    article {
+        justify-content: space-between;
+    }
+
+    article nav {
+        max-width: 40%;
+    }
+
+    article section {
+        max-width: 60%;
+    }
+}
+
+@media (orientation: portrait) {
+    h1 {
+        display: inline-block;
+        margin: 0.5rem;
+    }
+}
+
+@media print {
+    @page {
+        size: A4 landscape;
+    }
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    article {
+        justify-content: space-between;
+    }
+}
+
+#cover {
+    position: relative;
+    min-height: 100dvh;
+    z-index: 1;
+}
+
+#player {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}

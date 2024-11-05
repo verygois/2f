@@ -1,0 +1,218 @@
+@page {
+  size: landscape;
+}
+
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#index nav input,
+#index ul li[hidden] {
+  display: none;
+}
+
+li {
+  list-style: inside none;
+}
+
+body,
+#cover h1,
+#index ul li {
+  padding: 0;
+  margin: 0;
+}
+
+#contents li strong,
+#contents li {
+  padding: 0.25rem;
+}
+
+#index nav,
+#index ul,
+#index ul li a {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+#cover h1 {
+  padding: 0.5rem;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "MS Mincho";
+  src: url("show/MSMincho.ttf");
+}
+
+#cover h1,
+#cover h2,
+#contents li strong,
+#contents li small,
+#index {
+  font-family: "MS Mincho", "SimSong", serif;
+}
+
+#contents li u {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#index nav input+label {
+  text-transform: uppercase;
+  text-decoration: solid underline;
+}
+
+#index nav input:checked+label {
+  color: #FF5733;
+  text-decoration: double underline;
+}
+
+#index nav input:checked+label {
+  font-size: 125%;
+}
+
+#cover h1,
+#index ul li strong,
+#contents li small {
+  font-size: 111%;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+#cover h1,
+#cover h2,
+#index ul li strong {
+  line-height: 150%;
+}
+
+#contents li small {
+  line-height: 200%;
+}
+
+#index ul li u {
+  font-size: 90%;
+}
+
+#contents li a[href] {
+  border-bottom: dotted 0.1rem transparent;
+}
+
+#contents li a[href]:hover {
+  color: #FF5733;
+  border-bottom: dotted 0.1rem #FF5733;
+}
+
+#contents li strong,
+#index ul li a[href] {
+  border: solid 0.05rem;
+  font-weight: 500;
+}
+
+#cover,
+#index ul li a {
+  display: grid;
+}
+
+#cover h1,
+#contents,
+#contents li a,
+#index nav,
+#index ul {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  place-items: baseline;
+}
+
+#cover {
+  place-content: center;
+}
+
+li u {
+  text-decoration: none;
+}
+
+#cover h1 {
+  justify-content: space-between;
+}
+
+#cover h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+#index nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#index ul li {
+  width: calc(100vw / 2 - 0.75rem);
+  max-width: 250px;
+  height: calc(100vw / 2 - 0.75rem);
+  max-height: 250px;
+
+}
+
+#index ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+#cover {
+  min-height: 100dvh;
+}
+
+#contents {
+  padding: 4rem 1rem;
+  margin: 0;
+  max-width: 1000px;
+}
+
+@media print {
+  html {
+    font-size: 1.75vh;
+  }
+}
+
+.community {
+  color: #111;
+}
+
+.live {
+  color: blue;
+}
+
+.talk {
+  color: green;
+}
+
+.shop {
+  color: gold;
+}
+
+.workshop {
+  color: orange;
+}
+
+.residency {
+  color: purple;
+}
+
+.members {
+  color: silver;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Beauty Spot in ∧°┐</title>
+    <meta content="Beauty Spot in ∧°┐" property="og:title">
+    <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." name="description">
+    <meta content="We are closed down Cafe, Shop and Gallery As of September 15th 2019." property="og:description">
+    <meta content="summary" name="twitter:card">
+    <meta content="https://vg.pe.hu/2f/shop/" property="og:url">
+    <meta content="https://vg.pe.hu/2f/shop/img/bg.jpeg" property="og:image">
+    <meta content="https://vg.pe.hu/2f/shop/img/bg.jpeg" name="twitter:image:src">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="icon" href="img/bs.png">
+    <style>
+        #index {
+            position: relative;
+            background-color: #fff;
+            z-index: 500;
+            padding: 2.5%;
+        }
+    </style>
+</head>
+
+<body id="box">
+    <div id="cover"></div>
+    <div id="logo">
+        <p><img src="img/bs.png"></p>
+    </div>
+
+    <section id="info">
+        <h1 class="Shasta">
+            <u>Beauty<br />Spot</u>
+        </h1>
+        <p class="Shasta">
+            <b>Opening Hours</b>
+        </p>
+        <p class="Shasta">
+            <b>Weekday</b>
+            <br />3pm - 8pm<br />
+            <b>Saturday</b>
+            <br />1pm - 6pm<br />
+            <b>Sunday, Holiday</b>
+            <br />Irregular Open
+        </p>
+        <p><span class="Shasta">in</span> <span class="pehu">∧°┐</span></p>
+        <h1 class="Shasta">2F</h1>
+    </section>
+
+    <section id="links">
+        <b>Co-Store Owner 提協</b>
+        <p>
+            <a href="https://www.instagram.com/abi_the_best_items/">abi</a>
+        </p>
+        <p>
+            <a href="https://www.instagram.com/purevoyage_/">PURE VOYAGE</a>
+        </p>
+        <p>
+            <span>tbpj</span>
+        </p>
+        <p>
+            <span>nice shop su</span>
+        </p>
+    </section>
+
+    <main id="main">
+        <div class="marquee">
+            <p>
+                Sup, Dude! Beauty spot is here. We selling Zine, Book, Cassette, CD, Record, Vintage and Original
+                Clothes,
+                Small Item and etc for get more fuckin beauty. can't wait to see your beauty spot. Let's make beauty
+                spot and be beauty together
+            </p>
+        </div>
+        <img
+            src="https://64.media.tumblr.com/83fdc5d7771e6ed5489f069cd94a26fb/7622c702447acdef-91/s2048x3072/16e24d32671968051c01008478ad3ff9f40ab4fb.jpg">
+        <img
+            src="https://64.media.tumblr.com/1bcb5903cb30e8e3fd5355db6818262d/7622c702447acdef-86/s2048x3072/3ff2a6f544d7bf84fbb57ec206210a5efd9fb41d.jpg">
+        <img
+            src="https://64.media.tumblr.com/e249a487bf8cfde927f89dbae7c1979b/7622c702447acdef-6a/s2048x3072/c5b2a115940525c60a299e8a7724f169a652c922.jpg">
+        <img
+            src="https://64.media.tumblr.com/8a17faf8ea07c14d3f9f3584ef99e932/7622c702447acdef-e8/s2048x3072/889c03d0b3eea85f9b094285a2efcd5f01bac509.jpg">
+
+    </main>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                var y = $(this).scrollTop();
+
+                var plus = y * 0.0005 + 1;
+                $("#links").css('transform', 'scale(' + plus + ')');
+                let minus = y * -0.0005 + 1;
+                $("#info").css('transform', 'rotateZ(' + y + 'deg) scale(' + minus + ')');
+            });
+        });
+    </script>
+</body>
+
+</html>

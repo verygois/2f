@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="article" property="og:type">
+    <title>∧°┐ | 1.7 - 8.31.2019</title>
+    <meta content="∧°┐ | 1.7 - 8.31.2019" property="og:title">
+    <meta content="誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました" name="description">
+    <meta content="誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました" property="og:description">
+    <meta content="https://vg.pe.hu/2f/show/" property="og:url">
+
+    <script src="script.js"></script>
+    <script>
+        // ?date=YYYYMMDD
+        let params = new URLSearchParams(location.search)
+        if (location.search) {
+            if (params.get("date")) {
+                showJSON(params.get("date") + ".json");
+            };
+        }
+
+        var player,
+            youtubeID;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                videoId: youtubeID,
+                playerVars: {
+                    'playsinline': 1,
+                    'controls': 0,
+                    'rel': 0
+                }
+            });
+        }
+
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    </script>
+    <link rel="icon" href="../2019.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <article id="cover">
+        <h1 id="title">∧°┐</h1>
+        <nav>
+            <time id="date" data-time="2019/1/6 15:00:00">2F</time><br />
+            <b id="door">1.7 - 8.31.2019</b><br />
+            <u id="members">come on join us :)</u>
+        </nav>
+        <section>
+            <h2 id="subtitle">誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました。</h2>
+            <h3 id="info"></h3>
+        </section>
+        <aside id="aside"></aside>
+        <code id="url" hidden></code>
+    </article>
+    <div id="player"></div>
+
+    <footer id="footer">
+        <input id="back" type="button" value="↩">
+    </footer>
+</body>

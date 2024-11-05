@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Shasta';
+    src: url('font/Fetamont-I2H77s3TbG.eot'),
+        url('font/Fetamont-I2H77s3TbG.woff') format('woff'),
+        url('font/Fetamont-I2H77s3TbG.ttf') format('truetype'),
+        url('font/Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
+}
+
+.Shasta {
+    font-family: 'Shasta';
+}
+
+#info {
+    color: #fff;
+    background-color: #BA2636;
+    text-align: center;
+    padding: 5vh;
+    font-size: 4.5vh;
+    letter-spacing: 0.25vh;
+    text-align: center;
+}
+
+#info h1 {
+    margin: 0;
+    font-size: 250%;
+    letter-spacing: -0.10vh;
+}
+
+#links {
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+    font-size: 2.5vw;
+    padding: 1vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#links p {
+    margin: 0;
+    font-size: 150%;
+}
+
+#links,
+#links a {
+    color: pink;
+}
+
+#links a,
+#links b,
+#links span {
+    display: inline-block;
+    padding: 0 1vw;
+}
+
+#links a:hover {
+    color: #DDFFFF;
+    background-color: pink;
+}
+
+#main {
+    background-color: #fff;
+}
+
+#main .marquee {
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+#main .marquee p {
+    color: #fff;
+    text-shadow: 3px 3px 1px #000;
+    display: block;
+    white-space: nowrap;
+    padding-left: 100%;
+    margin: 0;
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: marquee;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+#logo img {
+    -webkit-animation: 5s linear infinite spinner;
+    animation: 5s linear infinite spinner;
+}
+
+/* WebKit and Opera browsers */
+@-webkit-keyframes spinner {
+    from {
+        -webkit-transform: rotateY(0deg);
+    }
+
+    to {
+        -webkit-transform: rotateY(-360deg);
+    }
+}
+
+/* all other browsers */
+@keyframes spinner {
+    from {
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+    to {
+        -moz-transform: rotateY(-360deg);
+        -ms-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}

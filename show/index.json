@@ -1,0 +1,16 @@
+{
+    "title": "タイトル",
+    "subtitle": "副題",
+    "description": "説明文",
+    "date": {
+        "from": "MM.DD.YYYY",
+        "datetime": "2019/1/6 15:00:00"
+    },
+    "door": "自由料金制 NAME YOUR PRICE",
+    "members": null,
+    "info": [
+        "___"
+    ],
+    "youtube": null,
+    "aside": null
+}

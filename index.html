@@ -6,44 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta content="website" property="og:type">
-  <title>2F | 1.7 - 8.31.2019</title>
-  <meta content="2F | 1.7 - 8.31.2019" property="og:title">
-  <meta content="∧°┐ | creative, community space" name="description">
-  <meta content="∧°┐ | creative, community space" property="og:description">
+  <title>∧°┐ | 1.7 - 8.31.2019</title>
+  <meta content="∧°┐ | 1.7 - 8.31.2019" property="og:title">
+  <meta content="誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました。" name="description">
+  <meta content="誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました。" property="og:description">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="https://vg.pe.hu/2f/" property="og:url">
-  <meta content="https://vg.pe.hu/2f/pr/2f.png" property="og:image">
-  <meta content="https://vg.pe.hu/2f/pr/2f.png" name="twitter:image:src">
+  <meta content="show/pr/cover.png" property="og:image">
+  <meta content="show/pr/cover.png" name="twitter:image:src">
 
-  <link rel="icon" href="img/icon.png" type="image/png">
-  <link rel="stylesheet" href="assets/index.css" />
-  <link rel="stylesheet" href="https://vg.pe.hu/jp/floor.css" />
+  <link rel="icon" href="2019.png" type="image/png">
+  <link rel="stylesheet" href="index.css" />
+
+  <script src="index.js"></script>
+  <script>
+    indexJSON("index.json")
+  </script>
 </head>
 
 <body>
-  <article id="event">
-    <section class="menu">
-      <h1>
-        <span class="tt">2F</span>
-      </h1>
+  <main id="cover">
+    <h1>
+      <span class="tt">∧°┐</span>
       <sup class="open">1.7 - 8.31.2019</sup>
-    </section>
-    <section class="list" id="contents"></section>
+    </h1>
+    <menu id="contents">
+      <h2>
+        誠に勝手ながら 2019年9月15日を持って 西天満の ∧°┐ は、完全閉館しました。<br>
+        We are closed down Cafe, Shop and Gallery As of September 15th 2019.
+      </h2>
+    </menu>
+  </main>
+  <article id="index">
+    <nav></nav>
+    <ul></ul>
   </article>
-  <main id="floor"></main>
-  <script type="text/javascript">
-    fetch('assets/contents.html')
-      .then(response => response.text())
-      .then(innerHTML => {
-        document.querySelector('#contents').innerHTML = innerHTML;
-      });
-
-    fetch('/jp/floor.html')
-      .then(response => response.text())
-      .then(innerHTML => {
-        document.querySelector('#floor').innerHTML = innerHTML;
-      });
-  </script>
 </body>
 
 </html>
