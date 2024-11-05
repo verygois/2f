@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Shasta';
+    src: url('../font/Fetamont-I2H77s3TbG.eot'),
+        url('../font/Fetamont-I2H77s3TbG.woff') format('woff'),
+        url('../font/Fetamont-I2H77s3TbG.ttf') format('truetype'),
+        url('../font/Fetamont-I2H77s3TbG.svg#Fetamont-I2H77s3TbG') format('svg');
+}
+
+.Shasta {
+    font-family: 'Shasta';
+}
+
+#info {
+    color: #fff;
+    background-color: #BA2636;
+    text-align: center;
+    padding: 5vh;
+    font-size: 4.5vh;
+    letter-spacing: 0.25vh;
+    text-align: center;
+}
+
+#info h1 {
+    margin: 0;
+    font-size: 250%;
+    letter-spacing: -0.10vh;
+}
+
+#links {
+    color: pink;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 2.5vw;
+    padding: 1vw;
+}
+
+#links a,
+#links b {
+    color: inherit;
+    font-weight: 500;
+    margin: 0;
+    font-size: 150%;
+}
+
+#links,
+#links a,
+footer {
+    font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO";
+}
+
+#links a:hover {
+    color: #DDFFFF;
+    background-color: pink;
+}
+
+footer {
+    font-size: 1.75rem;
+    overflow: hidden;
+    background-color: gold;
+}
+
+footer nav {
+    color: #fff;
+    text-shadow: 3px 3px 1px #000;
+}

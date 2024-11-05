@@ -184,7 +184,7 @@ hr {
   #main {
     min-height: -webkit-fill-available;
   }
-  
+
   h1,
   h2,
   h3 {
@@ -233,7 +233,7 @@ hr {
   @page {
     size: B5 landscape;
   }
-  
+
   #main,
   #info {
     min-height: 100vh;

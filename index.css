@@ -165,7 +165,15 @@ li u {
   max-width: 250px;
   height: calc(100vw / 2 - 0.75rem);
   max-height: 250px;
+}
 
+@media screen and (max-width: 550px) {
+  #index ul li {
+    width: calc(100vw / 1 - 0.75rem);
+    max-width: calc(100vw / 1 - 0.75rem);
+    height: auto;
+    max-height: max-content;
+  }
 }
 
 #index ul li a {
